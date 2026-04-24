@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "title": "Industrial Automation & Control Systems",
+        "year": "2023-2024",
+        "role": "Automation Engineer",
+        "stack": [
+            {
+            "name": "Angular",
+            "icon": "assets/icons/angular.svg"
+            },
+            {
+            "name": "HTML",
+            "icon": "assets/icons/html.svg"
+            },
+            {
+            "name": "CSS",
+            "icon": "assets/icons/css.svg"
+            }
+        ],
+        "description": "Control and monitoring system for industrial accelerator infrastructure",
+        "contributions": [
+            "Developed WPF applications for motion control testing",
+            "Designed and implemented UI for production systems"
+        ],
+        "impact": [
+            "Supported testing of 100+ products per day",
+            "Improved reliability of testing workflows"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Industrial TESTTT2",
+        "year": "2023-2024",
+        "role": "Automation Engineer",
+        "stack": [
+            {
+            "name": "Angular",
+            "icon": "assets/icons/angular.svg"
+            },
+            {
+            "name": "HTML",
+            "icon": "assets/icons/html.svg"
+            },
+            {
+            "name": "CSS",
+            "icon": "assets/icons/css.svg"
+            }
+        ],
+        "description": "Control and monitoring system for industrial accelerator infrastructure",
+        "contributions": [
+            "Developed WPF applications for motion control testing",
+            "Designed and implemented UI for production systems"
+        ],
+        "impact": [
+            "Supported testing of 100+ products per day",
+            "Improved reliability of testing workflows"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "CONTROLSS",
+        "year": "2023-2024",
+        "role": "Automation Engineer",
+        "stack": [
+            {
+            "name": "Angular",
+            "icon": "assets/icons/angular.svg"
+            },
+            {
+            "name": "HTML",
+            "icon": "assets/icons/html.svg"
+            },
+            {
+            "name": "CSS",
+            "icon": "assets/icons/css.svg"
+            }
+        ],
+        "description": "Control and monitoring system for industrial accelerator infrastructure",
+        "contributions": [
+            "Developed WPF applications for motion control testing",
+            "Designed and implemented UI for production systems"
+        ],
+        "impact": [
+            "Supported testing of 100+ products per day",
+            "Improved reliability of testing workflows"
+        ]
+    }
+]

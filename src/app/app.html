@@ -4,6 +4,15 @@
 
 <!-- <app-about></app-about> -->
 
-<app-projects></app-projects>
+<!-- <app-projects></app-projects> -->
 
 <!-- <app-contact></app-contact> -->
+
+<a routerLink="/home" routerLinkActive="highlightLink">Home</a>     &nbsp;
+<a routerLink="/about" routerLinkActive="highlightLink">About</a>   &nbsp;
+<a routerLink="/projects" routerLinkActive="highlightLink">Projects</a>   &nbsp;
+<a routerLink="/contact" routerLinkActive="highlightLink">Contact</a>   &nbsp;
+
+<router-outlet>
+    <!-- Here goes the component linked to the current route -->
+</router-outlet>
