@@ -1,20 +1,22 @@
 .top-bar{
-  position: fixed;
-  opacity: 0.9;
-  top: 0;  
-  left: 0;
-  width: 100%;
+    position: fixed;
+    opacity: 0.9;
+    top: 0;  
+    left: 0;
+    width: 100%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  padding: 12px 12px;
+    padding: 12px 12px;
 
-  background: white;
-  z-index: 1000;
+    background-color: rgba(10, 18, 36, 0.85); /* base + transparencia */
 
-  border-bottom: 1px solid #eee;    
+    backdrop-filter: blur(8px); 
+    z-index: 1000;
+
+    // border-bottom: 1px solid #eee;    
 }
 .top-bar a {
     text-decoration: none;
@@ -63,60 +65,53 @@
 .page-content{
   padding-top: 100px;
 }
-.footer{
-    position: sticky;
-    opacity: 0.9;
+
+.footer {
+    position: relative;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 2px 0px;
-
-    bottom: 0;  
-    right: 0;
-    width: 100%;      
-    
+    width: 100%;
     margin-top: 20px;
 
-    background: white;
     z-index: 1000;
 
-    border-bottom: 1px solid #eee;    
+    background-color: rgb(12, 20, 38);
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
 
-    // border: 1px solid red;
-}
-.footer-center{
-    display: flex;
-    gap: 16px;        
-
-    // border: 1px solid red;
-}
-.footer-icon{
-  width: 26px;  
-  height: 26px;
-  // object-fit: contain;
-
-//   border: 1px solid red;
-}
-.footer-left{
-    // border: 1px solid red;
-}
-.footer-right{    
+/* LEFT */
+.footer-left {
     display: flex;
     align-items: center;
+}
 
-    width: 44px;
-    height: 44px;
+/* CENTER */
+.footer-center {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 
+/* ICONS */
+.footer-icon {
+    width: 26px;
+    height: 26px;
+}
+
+/* RIGHT */
+.footer-right {
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    // border: 1px solid red;
+    width: 44px;
+    height: 44px;
 }
-.footer-right img{
-    width: 24px;  
-    height: 24px;
 
-    // border: 1px solid red;
+.footer-right img {
+    width: 24px;
+    height: 24px;
 }
