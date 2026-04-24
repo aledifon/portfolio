@@ -1,18 +1,33 @@
-<h1>Portfolio web</h1>
+<header class="top-bar">
+    <div class="logo">
+        <h1 class="menu-name"><span>Ale</span>jandro <span>Di</span>az <span>Fon</span>talva</h1>
+    </div>
+    
+    <nav class="nav-links">
+        <a routerLink="/home" routerLinkActive="highlightLink">Home</a>     
+        <a routerLink="/about" routerLinkActive="highlightLink">About</a>   
+        <a routerLink="/projects" routerLinkActive="highlightLink">Projects</a>   
+        <a routerLink="/contact" routerLinkActive="highlightLink">Contact</a>   
+    </nav>
+    
+    <!-- GLOBAL UI ELEMENT -->
+    <div class="social-icons">
+        <a href="mailto:aledifon89@email.com">
+            <img class="contact-icon" src="assets/icons/email.svg" alt="Email logo">        
+        </a>
+        <a href="https://www.linkedin.com/in/aledifon/" target="_blank" rel="noopener noreferrer">
+            <img class="contact-icon" src="assets/icons/linkedin.svg" alt="Linkedin logo">        
+        </a>
+        <a href="https://github.com/aledifon" target="_blank" rel="noopener noreferrer">
+            <img class="contact-icon" src="assets/icons/github.svg" alt="Github logo">        
+        </a>
+    </div>
+</header>
 
-<!-- <app-home></app-home> -->
+<main class="page-content">
+    <router-outlet></router-outlet>
+</main>
 
-<!-- <app-about></app-about> -->
-
-<!-- <app-projects></app-projects> -->
-
-<!-- <app-contact></app-contact> -->
-
-<a routerLink="/home" routerLinkActive="highlightLink">Home</a>     &nbsp;
-<a routerLink="/about" routerLinkActive="highlightLink">About</a>   &nbsp;
-<a routerLink="/projects" routerLinkActive="highlightLink">Projects</a>   &nbsp;
-<a routerLink="/contact" routerLinkActive="highlightLink">Contact</a>   &nbsp;
-
-<router-outlet>
-    <!-- Here goes the component linked to the current route -->
-</router-outlet>
+<footer class="footer">    
+    
+</footer>

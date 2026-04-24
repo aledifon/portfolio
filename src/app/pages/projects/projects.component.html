@@ -1,6 +1,11 @@
 <section class="projects">
     <h2>Featured Projects</h2>
     
+    <p class="projects-intro">
+        Selected engineering and software projects across industrial systems,
+        desktop applications and modern frontend development using Angular.
+    </p>
+
     <!-- <button (click)="searchProjects()">LOAD PROJECTS</button> -->
 
     @for (p of projects$ | async; track p.id) {
@@ -29,7 +34,18 @@
                     <ul class="stack-list">
                         @for (item of p.stack; track item.name) {
                             <li class="stack-item">
-                                <img src= "{{item.icon}}" alt="{{item.name}} logo">
+                                <!-- Check if item.icon == null -> No mostrar; Si item.icon != null -> Mostrar -->
+                                @if(item.icon){
+                                    <img 
+                                        src= "{{item.icon}}" 
+                                        alt="{{item.name}} logo"
+                                    >
+                                }
+                                @else{
+                                     <div class="badge">
+                                        {{ item.name.slice(0,2).toUpperCase() }}
+                                    </div>
+                                }                                
                                 <span>{{item.name}}</span>
                             </li>
                         }                        
@@ -74,5 +90,13 @@
         </article>
     }    
 
+</section>
+
+<section class="cta">           
+    <!-- Go to Contact Page -->    
+    <a routerLink="/contact" class="cta-link primary">
+        Interested in more details or collaboration? 
+        Let's talk! →
+    </a>
 </section>
     

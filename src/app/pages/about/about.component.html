@@ -21,7 +21,24 @@
 
         Along the way, I also explored interactive development with Unity, 
         focusing on real-time visualization and user experiences.
+    </p>
+       
+    <!-- HIGHLIGHTED BLOCK -->
+    <div class="side-project-highlight">
 
+        <h3>Interactive Development</h3>
+
+        <p>
+            I build real-time interactive experiences using Unity and game development tools.
+        </p>
+
+        <a href="https://aledifon89.wixsite.com/aledifon-games" target="_blank">
+            Explore my interactive development work →
+        </a>
+
+    </div>
+
+    <p class="what-i-do">
         More recently, I've been expanding my skill set toward frontend development 
         with Angular and modern web technologies, continuously adapting to new tools 
         and environments as I evolve as a developer.
@@ -57,6 +74,10 @@
                     <span>Angular</span>
                 </li>                            
                 <li class="stack-item">
+                    <img class="stack-icon" src="assets/icons/typescript.svg" alt="TypeScript logo">
+                    <span>TypeScript</span>
+                </li>
+                <li class="stack-item">
                     <img class="stack-icon" src="assets/icons/html.svg" alt="HTML logo">
                     <span>HTML</span>
                 </li>
@@ -68,7 +89,7 @@
         </div>
 
         <div class="stack-category">
-            <h3>Backend</h3>
+            <h3>Software Development</h3>
             <ul>
                 <li class="stack-item">
                     <img class="stack-icon" src="assets/icons/csharp.svg" alt="C# logo">
@@ -79,36 +100,28 @@
                     <span>.NET</span>
                 </li>
                 <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/php.svg" alt="PHP logo">
-                    <span>PHP (basics)</span>
-                </li>
-            </ul>             
-        </div>
-
-        <div class="stack-category">
-            <h3>Languages</h3>
-            <ul>
-                <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/csharp.svg" alt="C# logo">
-                    <span>C#</span>
-                </li>
-                <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/typescript.svg" alt="TypeScript logo">
-                    <span>TypeScript</span>
-                </li>
-                <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/python.svg" alt="Python logo">
-                    <span>Python (support / automation)</span>
+                    <img class="stack-icon" src="assets/icons/wpf.svg" alt="WPF logo">
+                    <span>WPF</span>
                 </li>            
                 <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/cplusplus.svg" alt="C++ logo">
-                    <span>C/C++ (legacy)</span>
+                    <img class="stack-icon" src="assets/icons/winforms.svg" alt="Windows Forms logo">
+                    <span>Windows Forms</span>
                 </li>
             </ul>             
         </div>
 
         <div class="stack-category">
-            <h3>Tools</h3>
+            <h3>Industrial Systems</h3>
+            <ul>
+                <li class="stack-item">
+                    <img class="stack-icon" src="assets/icons/beckhoff.svg" alt="PLC logo">
+                    <span>Beckhoff / TwinCAT PLC</span>
+                </li>                            
+            </ul>             
+        </div>
+
+        <div class="stack-category">
+            <h3>Tools & Environment</h3>
             <ul>
                 <li class="stack-item">
                     <img class="stack-icon" src="assets/icons/git.svg" alt="Git logo">
@@ -123,60 +136,26 @@
                     <span>VS Code</span>
                 </li>
             </ul>             
-        </div>
+        </div>        
 
         <div class="stack-category">
-            <h3>Desktop Applications</h3>
-            <ul>
-                <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/dotnet.svg" alt=".NET logo">
-                    <span>.NET</span>
-                </li>
-                <li class="stack-item">
-                    <!-- <img class="stack-icon" src="assets/icons/.svg" alt="WPF logo"> -->
-                    <span>WPF</span>
-                </li>            
-                <li class="stack-item">
-                    <!-- <img class="stack-icon" src="assets/icons/.svg" alt="Windows Forms logo"> -->
-                    <span>Windows Forms</span>
-                </li>
-            </ul>             
-        </div>
-
-        <div class="stack-category">
-            <h3>Interactive & Real-Time</h3>
+            <h3>Additional</h3>
             <ul>
                 <li class="stack-item">
                     <img class="stack-icon" src="assets/icons/unity.svg" alt="Unity logo">
                     <span>Unity (2D/3D)</span>
                 </li>
-            </ul>             
-        </div>
-
-        <div class="stack-category">
-            <h3>Industrial Systems</h3>
-            <ul>
                 <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/beckhoff.svg" alt="PLC logo">
-                    <span>Beckhoff / TwinCAT PLC</span>
-                </li>                            
+                    <img class="stack-icon" src="assets/icons/industrialdata.svg" alt="SQL logo">
+                    <span>SQL (basic)</span>
+                </li> 
+                <li class="stack-item">
+                    <img class="stack-icon" src="assets/icons/php.svg" alt="PHP logo">
+                    <span>PHP</span>
+                </li> 
             </ul>             
         </div>
         
-        <div class="stack-category">
-            <h3>Database</h3>
-            <ul>
-                <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/microsoftsqlserver.svg" alt="MS SQL Server logo">
-                    <span>Microsoft SQL Server</span>
-                </li>
-                <li class="stack-item">
-                    <img class="stack-icon" src="assets/icons/mysql.svg" alt="MS SQL Server logo">
-                    <span>Microsoft SQL Server</span>
-                </li>
-            </ul>             
-        </div>
-
     </div>    
 </section>
 
@@ -193,8 +172,16 @@
 </section> 
 
 <section class="cta">    
-    <!-- Go to Projects Page -->
-    <a href="#">View my projects</a>             
-    <!-- Go to Contact Page -->
-    <a href="#">Let's talk!</a>        
+    <!-- Go to Projects Page -->         
+    <a routerLink="/projects" class="cta-link primary">
+        View my projects →
+    </a>     
+    <!-- Go to Contact Page -->    
+    <a routerLink="/contact" class="cta-link">
+        Let's talk! →
+    </a>
+    <!-- See my resume -->            
+    <a href="assets/documents/cv.pdf" target="_blank" class="cta-link">
+        See my resume →
+    </a>
 </section>

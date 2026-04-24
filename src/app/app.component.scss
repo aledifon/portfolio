@@ -1,0 +1,72 @@
+.top-bar{
+  position: fixed;
+  opacity: 0.9;
+  top: 0;  
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 12px;
+
+  background: white;
+  z-index: 1000;
+
+  border-bottom: 1px solid #eee;    
+}
+.top-bar a {
+    text-decoration: none;
+    color: inherit;
+}
+.top-bar a:hover {
+    opacity: 0.7;
+}
+.highlightLink{
+    font-weight: 600;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;    
+}
+.social-icons {
+    display: flex;
+    gap: 12px;    
+    margin-right: 30px;
+}
+.contact-icon{
+  width: 30px;  
+  height: 30px;
+  // object-fit: contain;
+}
+.menu-name{
+    font-weight: 400;
+}
+.menu-name span{
+    font-weight: 700;
+}
+
+.page-content{
+  padding-top: 100px;
+}
+.footer{
+    position: sticky;
+    opacity: 0.9;
+    bottom: 0;  
+    right: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 12px;
+
+    background: white;
+    z-index: 1000;
+
+    border-bottom: 1px solid #eee;    
+}

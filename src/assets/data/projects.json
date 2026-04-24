@@ -1,89 +1,165 @@
 [
     {
-        "id": 1,
-        "title": "Industrial Automation & Control Systems",
-        "year": "2023-2024",
-        "role": "Automation Engineer",
+        "id": "angular-portfolio-spa",
+        "title": "Angular Portfolio SPA",
+        "year": "2025",
+        "role": "Frontend Developer",
+        "description": "Single Page Application built with Angular to showcase engineering and software projects using a modular, component-based architecture.",
         "stack": [
-            {
+        {
             "name": "Angular",
             "icon": "assets/icons/angular.svg"
-            },
-            {
+        },
+        {
+            "name": "TypeScript",
+            "icon": "assets/icons/typescript.svg"
+        },
+        {
             "name": "HTML",
             "icon": "assets/icons/html.svg"
-            },
-            {
+        },
+        {
             "name": "CSS",
             "icon": "assets/icons/css.svg"
-            }
+        }
         ],
-        "description": "Control and monitoring system for industrial accelerator infrastructure",
         "contributions": [
-            "Developed WPF applications for motion control testing",
-            "Designed and implemented UI for production systems"
+            "Built SPA architecture using Angular routing and modular components",
+            "Implemented reactive data flow using Observables and async pipe",
+            "Designed reusable UI system for dynamic project rendering"
         ],
         "impact": [
-            "Supported testing of 100+ products per day",
-            "Improved reliability of testing workflows"
+            "Unified engineering and software projects into a single portfolio platform"
         ]
     },
     {
-        "id": 2,
-        "title": "Industrial TESTTT2",
-        "year": "2023-2024",
-        "role": "Automation Engineer",
+        "id": "etel-motion-control-testing",
+        "title": "Motion Control Testing System",
+        "year": "2020-2022",
+        "role": "Industrial IT Engineer (C# / .NET)",
+        "description": "Desktop applications for industrial motion control testing and validation systems in production environments.",
         "stack": [
-            {
-            "name": "Angular",
-            "icon": "assets/icons/angular.svg"
-            },
-            {
-            "name": "HTML",
-            "icon": "assets/icons/html.svg"
-            },
-            {
-            "name": "CSS",
-            "icon": "assets/icons/css.svg"
-            }
+        {
+            "name": "C#",
+            "icon": "assets/icons/csharp.svg"
+        },
+        {
+            "name": ".NET",
+            "icon": "assets/icons/dotnet.svg"
+        },
+        {
+            "name": "WPF",
+            "icon": "assets/icons/wpf.svg"
+        },
+        {
+            "name": "WinForms",
+            "icon": "assets/icons/winforms.svg"
+        },
+        {
+            "name": "JSON",
+            "icon": "assets/icons/json.svg"
+        },
+        {
+            "name": "Excel",
+            "icon": "assets/icons/excel.svg"
+        },
+        {
+            "name": "File-based Systems",
+            "icon": "assets/icons/file.svg"
+        }
         ],
-        "description": "Control and monitoring system for industrial accelerator infrastructure",
         "contributions": [
-            "Developed WPF applications for motion control testing",
-            "Designed and implemented UI for production systems"
+            "Developed WPF/WinForms applications for industrial test benches",
+            "Implemented automated testing workflows and data processing pipelines",
+            "Managed structured file-based data storage (JSON, Excel) for test results",
+            "Supported production tooling and debugging of critical issues"
         ],
         "impact": [
-            "Supported testing of 100+ products per day",
-            "Improved reliability of testing workflows"
+            "Enabled execution of 10+ automated tests per day",
+            "Supported validation pipeline enabling shipment of 100+ industrial products"
         ]
     },
     {
-        "id": 3,
-        "title": "CONTROLSS",
-        "year": "2023-2024",
+        "id": "less-production-line-automation",
+        "title": "Production Line Automation System",
+        "year": "2022-2024",
         "role": "Automation Engineer",
+        "description": "PLC-based automation system for industrial production lines with integrated control and HMI interfaces.",
         "stack": [
-            {
-            "name": "Angular",
-            "icon": "assets/icons/angular.svg"
-            },
-            {
-            "name": "HTML",
-            "icon": "assets/icons/html.svg"
-            },
-            {
-            "name": "CSS",
-            "icon": "assets/icons/css.svg"
-            }
+        {
+            "name": "Beckhoff PLC",
+            "icon": "assets/icons/beckhoff.svg"
+        },
+        {
+            "name": "TwinCAT 3",
+            "icon": null
+        },
+        {
+            "name": "HMI",
+            "icon": "assets/icons/hmi.svg"
+        },
+        {
+            "name": "Industrial Data Integration",
+            "icon": "assets/icons/industrialdata.svg"
+        }
         ],
-        "description": "Control and monitoring system for industrial accelerator infrastructure",
         "contributions": [
-            "Developed WPF applications for motion control testing",
-            "Designed and implemented UI for production systems"
+            "Developed PLC control logic for production automation systems",
+            "Designed HMI interfaces for operator monitoring and interaction",
+            "Implemented PLC communication with external data systems via TwinCAT 3",
+            "Integrated control logic into industrial production workflows"
         ],
         "impact": [
-            "Supported testing of 100+ products per day",
-            "Improved reliability of testing workflows"
+            "Enabled production of 100+ units across multiple work orders",
+            "Supported deployment of new product types in industrial production line"
+        ]
+    },
+    {
+        "id": "cern-control-systems",
+        "title": "CERN Control & Real-Time Systems",
+        "year": "2016-2020",
+        "role": "Control & Real-Time Software Engineer",
+        "description": "Development of control, data acquisition and experimental systems for scientific and accelerator infrastructure.",
+        "stack": [
+        {
+            "name": "Beckhoff PLC",
+            "icon": "assets/icons/beckhoff.svg"
+        },
+        {
+            "name": "LabVIEW",
+            "icon": "assets/icons/labview.svg"
+        },
+        {
+            "name": "MATLAB",
+            "icon": "assets/icons/matlab.svg"
+        },
+        {
+            "name": "C / C++",
+            "icon": "assets/icons/cplusplus.svg"
+        },
+        {
+            "name": "PHP",
+            "icon": "assets/icons/php.svg"
+        },
+        {
+            "name": "Arduino",
+            "icon": "assets/icons/arduino.svg"
+        },
+        {
+            "name": "Database Querying (Oracle / MySQL)",
+            "icon": null
+        }
+        ],
+        "contributions": [
+            "Developed PLC-based control systems for accelerator infrastructure",
+            "Built real-time data acquisition systems for superconducting magnet testing using LabVIEW",
+            "Developed embedded C/C++ systems for sensor calibration and robotic applications",
+            "Created PHP-based scripts for database interaction and experimental data management",
+            "Supported scientific data processing and system integration across multiple subsystems"
+        ],
+        "impact": [
+            "Contributed to scientific infrastructure used in particle accelerator experiments",
+            "Supported validation of superconducting magnet and experimental systems"
         ]
     }
 ]
