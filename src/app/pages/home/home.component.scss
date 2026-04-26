@@ -1,9 +1,99 @@
 .hero-title{
-    font-weight: 500;    
-    margin-bottom: 0px;
+    font-weight: 500;   
+    font-size: 48px; 
+    margin-bottom: -5px;    
+    color: #e5e7eb;
 }
 .hero-title span{
     font-weight: 700;
     color: #4da3ff;
 }
+.hero-subtitle{
+    margin-bottom: 20px;
+    font-size: 20px;
+    // color: #dbeafe;
+    color: #e5e7eb;
+}
+.hero-description{
+    margin-bottom: 30px;    
+    line-height: 1.6;
+    // color: #94a3b8;
+    color: #dbeafe;    
+}
+.hero-text{
+    margin-bottom: 12px;   
+    text-align: justify;    
+    font-size: 18px; 
+}
 
+.cta{
+    display: flex;
+    flex-direction: row;
+    width: 460px;
+    gap: 16px;
+}
+
+.cta a.primary{
+    font-weight: 600;
+    border-width: 2px;
+}
+.cta a:not(.primary) {
+  opacity: 0.85;
+}
+
+a{
+    position: relative;
+    overflow: hidden;    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 10px;
+    margin-bottom: 20px;
+
+    text-decoration: none;
+    color: #f8fafc;
+            
+    border: 1px solid #4da3ff;          // For Horizontal filling Fx    
+    background: transparent;
+    // border-bottom: 2px solid #4da3ff;   // For Vertical filling Fx
+
+    z-index: 1;    
+    transition: color 0.3s ease-out;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+
+    // bottom: 0;      // For Horizontal filling Fx
+    // top: auto;      // For Horizontal filling Fx
+    top: 0;         // For vertical filling Fx    
+    left: 0;
+
+    // For Horizontal filling Fx
+    height: 100%;
+    width: 0%;
+
+    // For Vertical filling Fx
+    // height: 0%;
+    // width: 100%;
+
+    background-color: #4da3ff;
+
+    z-index: -1;
+    transition: width 0.3s ease;    // For Horizontal filling Fx
+    // transition: height 0.3s ease;   // For Vertical filling Fx
+}
+
+a:hover::before{
+    // height: 100%;           // For Vertical filling Fx
+    width: 100%;           // For Horizontal filling Fx
+}
+
+a:hover {
+  color: #0f172a;
+  border-color: #0f172a;
+  opacity: 1;
+}
