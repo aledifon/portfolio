@@ -1,53 +1,57 @@
-<header class="top-bar">
-    <div class="logo">
-        <div class="menu-name"><span>Ale</span>jandro <span>Di</span>az <span>Fon</span>talva</div>
-    </div>
-    
-    <nav class="nav-links">
-        <a routerLink="/home" routerLinkActive="highlightLink">Home</a>     
-        <a routerLink="/about" routerLinkActive="highlightLink">About</a>   
-        <a routerLink="/projects" routerLinkActive="highlightLink">Projects</a>   
-        <a routerLink="/contact" routerLinkActive="highlightLink">Contact</a>   
-    </nav>
-    
-    <!-- GLOBAL UI ELEMENT -->
-    <div class="social-icons">
-        <!-- <a href="mailto:aledifon89@email.com">
-            <img class="contact-icon" src="assets/icons/email.svg" alt="Email logo">        
-        </a> -->
-        <a href="https://www.linkedin.com/in/aledifon/" target="_blank" rel="noopener noreferrer">
-            <img class="header-icon linkedin" src="assets/icons/linkedin.svg" alt="Linkedin logo">        
-        </a>
-        <a href="https://github.com/aledifon" target="_blank" rel="noopener noreferrer">
-            <img class="header-icon github" src="assets/icons/github.svg" alt="Github logo">        
-        </a>
-    </div>
-</header>
+<div class="app-layout">
+    <header class="top-bar">
+        <div class="logo">
+            <div class="menu-name"><span>Ale</span>jandro <span>Di</span>az <span>Fon</span>talva</div>
+        </div>
+        
+        <nav class="nav-links">
+            <a routerLink="/home" routerLinkActive="highlightLink">Home</a>     
+            <a routerLink="/about" routerLinkActive="highlightLink">About</a>   
+            <a routerLink="/projects" routerLinkActive="highlightLink">Projects</a>   
+            <a routerLink="/contact" routerLinkActive="highlightLink">Contact</a>   
+        </nav>
+        
+        <!-- GLOBAL UI ELEMENT -->
+        <div class="social-icons">
+            <!-- <a href="mailto:aledifon89@email.com">
+                <img class="contact-icon" src="assets/icons/email.svg" alt="Email logo">        
+            </a> -->
+            <a href="https://www.linkedin.com/in/aledifon/" target="_blank" rel="noopener noreferrer">
+                <img class="header-icon linkedin" src="assets/icons/linkedin.svg" alt="Linkedin logo">        
+            </a>
+            <a href="https://github.com/aledifon" target="_blank" rel="noopener noreferrer">
+                <img class="header-icon github" src="assets/icons/github.svg" alt="Github logo">        
+            </a>
+        </div>
+    </header>
 
-<main class="page-content">
-    <router-outlet></router-outlet>
-</main>
+    <main class="page-content">
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
 
-<footer class="footer"> 
-    <div class="footer-left">
-        &copy; 2026 Alejandro Diaz Fontalva
-    </div>      
+    <footer class="footer"> 
+        <div class="footer-left">
+            &copy; 2026 Alejandro Diaz Fontalva
+        </div>      
 
-    <div class="footer-center">
-        <a href="mailto:aledifon89@email.com">
-            <img class="footer-icon" src="assets/icons/email.svg" alt="Email logo">        
-        </a>
-        <a href="https://www.linkedin.com/in/aledifon/" target="_blank" rel="noopener noreferrer">
-            <img class="footer-icon" src="assets/icons/linkedin.svg" alt="Linkedin logo">        
-        </a>
-        <a href="https://github.com/aledifon" target="_blank" rel="noopener noreferrer">
-            <img class="footer-icon" src="assets/icons/github.svg" alt="Github logo">        
-        </a>
-    </div>
-    
-    <div class="footer-right">
-        <a href=#>
-            <img src="assets/icons/backtotop.svg" alt="Back to top">        
-        </a>
-    </div>
-</footer>
+        <div class="footer-center">
+            <a href="mailto:aledifon89@email.com">
+                <img class="footer-icon email" src="assets/icons/email.svg" alt="Email logo">        
+            </a>
+            <a href="https://www.linkedin.com/in/aledifon/" target="_blank" rel="noopener noreferrer">
+                <img class="footer-icon linkedin" src="assets/icons/linkedin.svg" alt="Linkedin logo">        
+            </a>
+            <a href="https://github.com/aledifon" target="_blank" rel="noopener noreferrer">
+                <img class="footer-icon github" src="assets/icons/github.svg" alt="Github logo">        
+            </a>
+        </div>
+        
+        <div class="footer-right">
+            <a href=#>
+                <img class="back-to-top" src="assets/icons/backtotop.svg" alt="Back to top">        
+            </a>
+        </div>
+    </footer>
+</div>

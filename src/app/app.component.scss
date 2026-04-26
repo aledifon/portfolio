@@ -1,44 +1,48 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .top-bar{
     position: fixed;
     box-sizing: border-box;
     opacity: 0.9;
-    top: 0;  
+    top: 0;
     left: 0;
     width: 100%;
+    height: 70px;
+    padding: 0px 30px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 5px 30px;
-
     background-color: rgba(10, 18, 36, 0.85); /* base + transparencia */
 
-    backdrop-filter: blur(8px); 
+    backdrop-filter: blur(8px);
     z-index: 1000;
 
-    // border-bottom: 1px solid #eee;    
+    // border-bottom: 1px solid #eee;
 }
 .top-bar a {
     text-decoration: none;
     color: inherit;
 
     padding: 6px;
-
-    // border: 2px solid red;
 }
 
 // .highlightLink{
-//     font-weight: 600;    
+//     font-weight: 600;
 // }
 
 .nav-links {
     display: flex;
-    gap: 16px;    
+    gap: 16px;
 }
 .nav-links a{
     text-transform: uppercase;
-    font-size: 14px;    
+    font-size: 14px;
     letter-spacing: 0.5px;
     transition: color 0.3s ease-out;
 }
@@ -51,26 +55,20 @@
 }
 
 .social-icons {
-    display: flex;    
-    opacity: 0.9;    
-
-    // border: 1px solid red;
+    display: flex;
+    gap: 10px;
 }
 .header-icon{
-  width: 20px;  
-  height: 20px;
-  // object-fit: contain;
-  padding: 6px;  
-  opacity: 0.9;    
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out;
-
-//   border: 1px solid red;
 }
 .header-icon.github{
     filter: invert(1);
-} 
+}
 .header-icon:hover{
-    opacity: 1;    
+    opacity: 1;
     transform: scale(1.2);
 }
 
@@ -100,22 +98,30 @@
 
 .page-content{
   padding-top: 100px;
+
+  flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .footer {
-    position: relative;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     width: 100%;
     margin-top: 20px;
+    padding: 10px 30px;
 
     z-index: 1000;
 
     background-color: rgb(12, 20, 38);
     border-top: 1px solid rgba(255,255,255,0.06);
+
 }
 
 /* LEFT */
@@ -127,14 +133,26 @@
 /* CENTER */
 .footer-center {
     display: flex;
-    align-items: center;
-    gap: 16px;
+    // align-items: center;
+    gap: 14px;
 }
 
 /* ICONS */
 .footer-icon {
     width: 26px;
     height: 26px;
+    opacity: 0.9;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;    
+}
+.footer-icon.github{
+    filter: invert(1);
+}
+.footer-icon.email{
+    filter: invert(1);
+}
+.footer-icon:hover{
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 /* RIGHT */
@@ -147,7 +165,14 @@
     height: 44px;
 }
 
-.footer-right img {
+.footer-right .back-to-top {
     width: 24px;
     height: 24px;
+    opacity: 0.9;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    filter: invert(1);
+}
+.footer-right .back-to-top:hover{
+    opacity: 1;
+    transform: scale(1.2);
 }
