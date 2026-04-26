@@ -29,8 +29,8 @@
 .cta{
     display: flex;
     flex-direction: row;
-    width: 460px;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 26px;
 }
 
 .cta a.primary{
@@ -50,7 +50,7 @@ a{
     justify-content: center;
 
     padding: 5px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 
     text-decoration: none;
     color: #f8fafc;
