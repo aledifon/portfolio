@@ -2,7 +2,8 @@
 .hero-title{    
     font-weight: 500;   
     font-size: 48px; 
-    margin-bottom: -5px;            
+    margin-bottom: -5px;       
+    text-align: center;
 }
 
 .hero-title .highlight{
@@ -30,6 +31,7 @@
     color: #cbd5f5;
     // color: #cbd5e1;
     transition: opacity 0.8s ease-in;    
+    text-align: center;
 }
 .hero-subtitle.hide{    
     opacity: 0;
@@ -38,15 +40,23 @@
     opacity: 1;
 }
 
+.hero-content{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
 // HERO DESCRIPTION
 .hero-description{
     margin-bottom: 30px;    
     line-height: 1.6;    
     // color: #dbeafe;    
     color: #bfdbfe;    
+    max-width: 700px;
 }
 .hero-text{
-    margin-bottom: 12px;   
+    margin-bottom: 18px;   
     text-align: justify;    
     font-size: 18px; 
 }
@@ -54,9 +64,10 @@
 // CALL TO ACTION
 .cta{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 26px;
+    gap: 30px;
+    margin-top: 8px;
 }
 
 .cta a.primary{
@@ -70,6 +81,8 @@
 a{
     position: relative;
     overflow: hidden;    
+    height: 45px;
+    width: 160px;
 
     display: flex;
     align-items: center;
@@ -87,6 +100,8 @@ a{
 
     z-index: 1;    
     transition: color 0.3s ease-out;
+
+    border-radius: 10px;
 }
 
 a::before {

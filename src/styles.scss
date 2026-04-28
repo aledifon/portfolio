@@ -2,7 +2,9 @@ html {
   scroll-behavior: smooth;  
 }
 body {
-  background-color: rgb(15, 23, 42); /* gris azulado oscuro */
+  background-color: rgba(15, 23, 42); /* gris azulado oscuro */
+  background: radial-gradient(circle at top, #0f172a, #070b14);
+  // background: radial-gradient(circle, #0f172a, #0c1326, #070b14);
   color: #e5e7eb;
     font-family: 'Source Sans 3';    
     line-height: 1.6;
@@ -15,9 +17,6 @@ body {
   // margin: 20px 20px;
 
   margin: 0;
-}
-section {
-  background-color: #111827; /* un poco más claro */
 }
 
 // * {
