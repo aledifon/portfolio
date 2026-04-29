@@ -135,7 +135,7 @@ ul{
   margin-bottom: 40px;    
   line-height: 1.6;    
   // color: #dbeafe;    
-  color: #bfdbfe; 
+  color: #bfdbfe;   
 }
 
 .video-pitch h2{
@@ -152,11 +152,37 @@ ul{
   font-size: 18px; 
 }
 
+.video-wrapper{
+  display: inline-block;
+  transition: transform 0.25s ease, box-shadow 0.3s ease; 
+}
+
+// Video Zoom FX (Applied to video container to avoid GPU rendering artifacts)
+.video-wrapper:hover{
+  // transform: translateY(-2px);
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
 .video-pitch video{    
   // width: 100%;  
   max-width: 700px;
   height: auto;    
-  border-radius: 8px;
+  border-radius: 8px;  
+
+  /* 
+  Fix for GPU rendering issues on video elements.
+
+  In some browsers (Chrome/Edge), hardware acceleration can cause
+  color artifacts (e.g. blue/green tint) when rendering video,
+  especially during resize or certain layout conditions.
+
+  These properties help prevent unnecessary GPU compositing
+  and stabilize video rendering.
+  */ 
+  transform: none;
+  filter: none;
+  backface-visibility: hidden; 
 }
 
 // CTA section
