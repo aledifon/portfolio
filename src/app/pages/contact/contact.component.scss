@@ -1,3 +1,4 @@
+// Page title
 h1{
   font-weight: 500;   
   font-size: 48px; 
@@ -9,14 +10,24 @@ h1{
   color: #bfdbfe;  
 }
 
+// GENERAL PAGE SECTION
 .contact-content{
     display: flex;
     flex-direction: row;
     gap: 40px;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
+// Media-query applied (Only applies style when screen < 768px)
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}
+
+// CONTACT FORM SECTION
 .contact-form{
   margin-bottom: 40px;    
   line-height: 1.6;    
@@ -56,40 +67,120 @@ h1{
 
 .contact-field label{
   text-align: left;    
-  font-size: 20px; 
+  font-size: 16px; 
   color: #e2e8f0;
 }
 
 .contact-field input{
+  height: 40px;
+}
+
+.contact-field textarea{
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-field input,
+.contact-field textarea{
   text-align: justify;    
   font-size: 16px; 
 
-  border-radius: 8px;
-  height: 40px;
+  border-radius: 8px;  
   
-  background: rgba(77, 163, 255, 0.2);  
-  color: #bfdbfe;  
+  background: rgba(255, 255, 255, 0.08);  
+  border: 1px solid rgba(77, 163, 255, 0.2);
+  color: #e2e8f0;  
 }
 
-.contact-field.message input{
-  height: 100px;
+.contact-field input:focus ,
+.contact-field textarea:focus{
+  outline: none;
+  border-color: #4da3ff;
+  box-shadow: 0 0 0 1px #4da3ff;
 }
 
+// Submit button
 .contact-form button{
-  width: 130px;  
-  height: 40px;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: inherit;
+  font-size: inherit;
 
-  border-radius: 8px;
-  background: #4da3ff;
-  color: #e2e8f0;
+  font-weight: 600;
+  // font-size: 16px;  
+
+  height: 45px;
+  width: 160px;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+  padding: 5px 10px;
+  margin-bottom: 0px;
+
+  // text-decoration: none;
+  color: #f8fafc;
+          
+  border: 1px solid #4da3ff;          // For Horizontal filling Fx    
+  background: transparent;
+  border-radius: 10px;
+  border-width: 2px;  
+  transition: color 0.3s ease-out;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;    
 }
 
-ul{
+// Hover Fx
+.contact-form button:hover {
+  color: #0f172a;
+  border-color: #0f172a;  
+}
+
+// Action over before layer when button:hover
+.contact-form button:hover::before{  
+  width: 100%;           // For Horizontal filling Fx
+}
+
+// Before layer definition
+.contact-form button::before{
+  content: "";
+  position: absolute;
+
+  top: 0;         // For Horizontal filling Fx    
+  left: 0;
+
+  // For Horizontal filling Fx
+  height: 100%;
+  width: 0%;
+
+  background-color: #4da3ff;
+
+  z-index: -1;
+  transition: width 0.3s ease;    // For Horizontal filling Fx
+}
+
+// SOCIAL ICONS SECTION
+.contact-info{
+  margin-bottom: 40px;    
+  line-height: 1.6;    
+  // color: #dbeafe;    
+  color: #bfdbfe;    
+  max-width: 300px;
+}
+
+.contact-info .title{
+  font-weight: 500;   
+  font-size: 38px; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info ul{
   display: flex;
-  flex-direction: row;
-  list-style-type: none;        
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;          
 }
 
 .contact-item{
