@@ -146,7 +146,7 @@
             "icon": "assets/icons/arduino.svg"
         },
         {
-            "name": "Database Querying (Oracle / MySQL)",
+            "name": "Database Querying",
             "icon": null
         }
         ],
