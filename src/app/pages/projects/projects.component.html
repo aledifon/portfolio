@@ -1,5 +1,5 @@
 <section class="projects">
-    <h2>Featured Projects</h2>
+    <h1>Featured Projects</h1>
     
     <p class="projects-intro">
         Selected engineering and software projects across industrial systems,
@@ -8,29 +8,30 @@
 
     <!-- <button (click)="searchProjects()">LOAD PROJECTS</button> -->
 
-    @for (p of projects$ | async; track p.id) {
-        <article class="project">     
-        
-            <header class="project-header">
-                <h3 class="project-title">
-                    {{p.title}}
-                </h3>            
-            </header>                       
+    <div class="articles">
+        @for (p of projects$ | async; track p.id) {
+            <article class="project">     
             
-            <section class="project-meta">
+                <header class="project-header">
+                    <h2 class="project-title">
+                        {{p.title}}
+                    </h2>            
+                </header>                       
                 
-                <div class="meta-item">
-                    <span class="meta-label">Year</span>                
-                    <span class="meta-value">{{p.year}}</span>                
-                </div>
+                <section class="project-meta">                                        
+                    <div class="meta-item">
+                        <span class="meta-label">Year:</span>
+                        <span class="meta-value">{{p.year}}</span>
+                    </div>
+                    <span class="meta-separator">·</span>
+                    <div class="meta-item">
+                        <span class="meta-label">Role:</span>
+                        <span class="meta-value">{{p.role}}</span>
+                    </div>
+                </section>        
 
-                <div class="meta-item">
-                    <span class="meta-label">Role:</span>                
-                    <span class="meta-value">{{p.role}}</span>                     
-                </div>
-
-                <div class="meta-item">
-                    <span class="meta-label">Stack:</span>
+                <section class="project-stack">                    
+                    <h3 class="meta-label">Stack</h3>
                     <ul class="stack-list">
                         @for (item of p.stack; track item.name) {
                             <li class="stack-item">
@@ -42,7 +43,7 @@
                                     >
                                 }
                                 @else{
-                                     <div class="badge">
+                                    <div class="badge">
                                         {{ item.name.slice(0,2).toUpperCase() }}
                                     </div>
                                 }                                
@@ -50,52 +51,56 @@
                             </li>
                         }                        
                     </ul>
-                </div>
+                </section>        
+                
+                <section class="project-content">
 
-            </section>        
+                    <div class="content-block">
+                        <h3 class="content-label">Description</h3>
+                        <p>
+                            {{p.description}}
+                        </p>
+                    </div>            
+
+                    <div class="content-block">
+                        <h3 class="content-label">Key contributions</h3>
+                        <ul>
+                            @for (item of p.contributions; track $index) {
+                                <li class="content-item">
+                                    {{item}}
+                                </li>
+                            }
+                        </ul>
+                    </div>            
+
+                    <div class="content-block">
+                        <h3 class="content-label">Impact</h3>
+                        <ul>
+                            @for (item of p.impact; track $index) {
+                                <li class="content-item">
+                                    {{item}}
+                                </li>
+                            }                        
+                        </ul>
+                    </div>
+
+                </section>  
             
-            <section class="project-content">
-
-                <div class="content-block">
-                    <h4 class="content-label">Description</h4>
-                    <p>
-                        {{p.description}}
-                    </p>
-                </div>            
-
-                <div class="content-block">
-                    <h4 class="content-label">Key contributions</h4>
-                    <ul>
-                        @for (item of p.contributions; track $index) {
-                            <li class="stack-item">
-                                {{item}}
-                            </li>
-                        }
-                    </ul>
-                </div>            
-
-                <div class="content-block">
-                    <h4 class="content-label">Impact</h4>
-                    <ul>
-                        @for (item of p.impact; track $index) {
-                            <li class="stack-item">
-                                {{item}}
-                            </li>
-                        }                        
-                    </ul>
-                </div>
-
-            </section>  
-        
-        </article>
-    }    
+            </article>
+        }    
+    </div>
 
 </section>
 
-<section class="cta">           
-    <!-- Go to Contact Page -->    
-    <a routerLink="/contact" class="cta-link primary">
-        Let's talk! →
-    </a>
+<section class="cta">      
+    <p class="cta-intro">
+        Interested in working together?
+    </p>
+    <div class="cta-links">     
+        <!-- Go to Contact Page -->    
+        <a routerLink="/contact" class="cta-link primary">
+            Let's talk! →
+        </a>
+    </div>
 </section>
     
