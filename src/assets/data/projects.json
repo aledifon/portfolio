@@ -13,6 +13,7 @@
             { "name": "HTML", "icon": "assets/icons/html.svg" },
             { "name": "CSS", "icon": "assets/icons/css.svg" }
         ],
+
         "contributions": [
             "Designed and implemented a modular SPA architecture using Angular routing and reusable components",
             "Built a dynamic UI driven by structured data models, enabling scalable project rendering",
@@ -22,10 +23,14 @@
             "Implemented micro-interactions and hover effects to enhance user experience and visual feedback",
             "Focused on clean UI composition, spacing, and typography to balance technical content with usability"
         ],
+
         "impact": [
             "Unified engineering and software experience into a single structured portfolio platform",
             "Improved content clarity and navigation through consistent layout and component design"
         ],        
+
+        "image": "assets/img/projects-angular-portfolio.png",
+
         "links": [            
             {
                 "label": "GitHub",
