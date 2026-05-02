@@ -14,19 +14,25 @@
 }
 
 .projects .projects-intro{
-  margin-bottom: 18px;   
-  text-align: justify;    
+  max-width: 650px;
   font-size: 18px; 
+  margin: 0 auto 20px;  
+  text-align: center;      
+  opacity: 0.85;
 }
 
 .articles{  
   display: flex;
   flex-direction: column;    
 
-  gap: 40px;
+  gap: 50px;
   align-items: center;
+
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+/* Card container: base layout + glassmorphism + interaction system */
 .project{
   max-width: 600px;
   padding: 20px;
@@ -45,22 +51,58 @@
   // border: 1px solid rgba(255,255,255,0.08);
 
   background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.10);
+  // border: 1px solid rgba(77, 163, 255, 0.3);
 
   box-shadow: 0 6px 24px rgba(0,0,0,0.2);
 
   border-radius: 16px;  
 
-backdrop-filter: blur(4px);             // optional, no critical
+  backdrop-filter: blur(4px);             // optional, no critical
 
   // transition: transform 0.2s ease, border-color 0.2s ease;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  // transition: transform 0.2s ease, 
+  //             box-shadow 0.2s ease, 
+  //             // opacity 0.4s ease-out,
+  //             border-color 0.4s ease-out;    
+  transition: all 0.3s ease;           
+  // opacity: 0.9;  
+  position: relative;
+  z-index: 0;
 }
 
+/* Hover elevation + accent border to simulate "lift" */
 .project:hover{
   transform: translateY(-3px);
-  // border-color: rgba(77, 163, 255, 0.5);
+  border-color: rgba(77, 163, 255, 0.55);
+  // border-color: rgba(255,255,255,0.14);
   box-shadow: 0 10px 35px rgba(0,0,0,0.4);
+  opacity: 1;
+}
+
+/* Glass overlay layer used for subtle hover highlight effect */
+.project::before {
+  content: "";
+  position: absolute;
+  inset: 0;                               /* full coverage of card. Equivalent to --> top:0, bottom:0, left:0, right:0 */
+  z-index: -1;                            /* sits behind content but above background */
+
+  background: rgba(255,255,255,0.02);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Activate overlay on hover to enhance depth perception */
+.project:hover::before {
+  opacity: 1;
+}
+
+// Alternating project card alignment using CSS nth-child()
+.project:nth-child(odd){
+  align-self: flex-start;
+}
+.project:nth-child(even){
+  align-self: flex-end;
 }
 
 .project-header{  
@@ -165,6 +207,11 @@ backdrop-filter: blur(4px);             // optional, no critical
   width: 30px;  
   height: 30px;
   object-fit: contain;
+}
+
+// Class applied via ngClass only when 'invert' flag is true or defined
+.invert{
+  filter: invert(1) brightness(0.8);    
 }
 
 .project-content{

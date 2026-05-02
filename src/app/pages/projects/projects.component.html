@@ -35,9 +35,10 @@
                     <ul class="stack-list">
                         @for (item of p.stack; track item.name) {
                             <li class="stack-item">
-                                <!-- Check if item.icon == null -> No mostrar; Si item.icon != null -> Mostrar -->
+                                <!-- Check if item.icon == null -> Hide; If item.icon != null -> Show -->
+                                <!-- [ngClass]="{ class: condition }" -->
                                 @if(item.icon){
-                                    <img 
+                                    <img [ngClass]="{ invert : item.invert }"           
                                         src= "{{item.icon}}" 
                                         alt="{{item.name}} logo"
                                     >

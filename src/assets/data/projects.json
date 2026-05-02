@@ -2,164 +2,218 @@
     {
         "id": "angular-portfolio-spa",
         "title": "Angular Portfolio SPA",
-        "year": "2025",
-        "role": "Frontend Developer",
-        "description": "Single Page Application built with Angular to showcase engineering and software projects using a modular, component-based architecture.",
+        "year": "2025-2026",
+        "role": "Frontend Developer (Angular)",
+
+        "description": "Single Page Application built with Angular to present engineering and software projects through a structured, data-driven UI with focus on readability, layout balance, and user experience.",
+
         "stack": [
-        {
-            "name": "Angular",
-            "icon": "assets/icons/angular.svg"
-        },
-        {
-            "name": "TypeScript",
-            "icon": "assets/icons/typescript.svg"
-        },
-        {
-            "name": "HTML",
-            "icon": "assets/icons/html.svg"
-        },
-        {
-            "name": "CSS",
-            "icon": "assets/icons/css.svg"
-        }
+            { "name": "Angular", "icon": "assets/icons/angular.svg" },
+            { "name": "TypeScript", "icon": "assets/icons/typescript.svg" },
+            { "name": "HTML", "icon": "assets/icons/html.svg" },
+            { "name": "CSS", "icon": "assets/icons/css.svg" }
         ],
         "contributions": [
-            "Built SPA architecture using Angular routing and modular components",
-            "Implemented reactive data flow using Observables and async pipe",
-            "Designed reusable UI system for dynamic project rendering"
+            "Designed and implemented a modular SPA architecture using Angular routing and reusable components",
+            "Built a dynamic UI driven by structured data models, enabling scalable project rendering",
+            "Implemented reactive data handling using Observables and async pipe",
+            "Designed responsive layouts with controlled content width and visual hierarchy for improved readability",
+            "Developed reusable UI patterns (project cards, stack display, conditional rendering of icons/badges)",
+            "Implemented micro-interactions and hover effects to enhance user experience and visual feedback",
+            "Focused on clean UI composition, spacing, and typography to balance technical content with usability"
         ],
         "impact": [
-            "Unified engineering and software projects into a single portfolio platform"
+            "Unified engineering and software experience into a single structured portfolio platform",
+            "Improved content clarity and navigation through consistent layout and component design"
+        ],        
+        "links": [            
+            {
+                "label": "GitHub",
+                "url": "https://github.com/aledifon/portfolio",
+                "type": "github"
+            }
         ]
     },
     {
         "id": "etel-motion-control-testing",
-        "title": "Motion Control Testing System",
+        "title": "Industrial Motion Control Testing Suite",
         "year": "2020-2022",
-        "role": "Industrial IT Engineer (C# / .NET)",
-        "description": "Desktop applications for industrial motion control testing and validation systems in production environments.",
+        "role": "Industrial Software Engineer (C# / .NET)",
+
+        "description": "Development of a modular .NET desktop testing suite used in industrial production lines for validation of motion control systems, test automation, and production data management.",
+
         "stack": [
-        {
-            "name": "C#",
-            "icon": "assets/icons/csharp.svg"
-        },
-        {
-            "name": ".NET",
-            "icon": "assets/icons/dotnet.svg"
-        },
-        {
-            "name": "WPF",
-            "icon": "assets/icons/wpf.svg"
-        },
-        {
-            "name": "WinForms",
-            "icon": "assets/icons/winforms.svg"
-        },
-        {
-            "name": "JSON",
-            "icon": "assets/icons/json.svg"
-        },
-        {
-            "name": "Excel",
-            "icon": "assets/icons/excel.svg"
-        },
-        {
-            "name": "File-based Systems",
-            "icon": "assets/icons/file.svg"
-        }
+            { "name": "C#", "icon": "assets/icons/csharp.svg" },
+            { "name": ".NET", "icon": "assets/icons/dotnet.svg" },
+            { "name": "WPF", "icon": "assets/icons/wpf.svg", "invert": true },
+            { "name": "WinForms", "icon": "assets/icons/winforms.svg", "invert": true },
+            { "name": "JSON", "icon": "assets/icons/json.svg", "invert": true },
+            { "name": "Excel", "icon": "assets/icons/excel.svg" },
+            { "name": "Industrial Testing Systems", "icon": "assets/icons/file.svg", "invert": true }
         ],
+
         "contributions": [
-            "Developed WPF/WinForms applications for industrial test benches",
-            "Implemented automated testing workflows and data processing pipelines",
-            "Managed structured file-based data storage (JSON, Excel) for test results",
-            "Supported production tooling and debugging of critical issues"
+            "Developed a modular .NET testing suite (WPF/WinForms) for industrial motion control systems",
+            "Implemented automated test workflows for production line validation processes",
+            "Designed and maintained structured data pipelines using JSON and Excel-based reporting",
+            "Built auxiliary applications integrated into the main suite, including a CSV-to-JSON converter to ensure compatibility between legacy and modern test data formats",
+            "Developed console-based automation tools to manage version control and deployment checks using Git in production environments",
+            "Improved deployment workflow by replacing manual file replacement processes with automated Git-based update mechanisms",
+            "Provided technical support, debugging, and feature development in production environments"
         ],
+
         "impact": [
-            "Enabled execution of 10+ automated tests per day",
-            "Supported validation pipeline enabling shipment of 100+ industrial products"
+            "Enabled execution of 10+ automated tests per day in production environments",
+            "Supported validation and release of 100+ industrial products to customers",
+            "Reduced software update time by replacing manual deployment process with automated Git-based versioning system",
+            "Improved compatibility between legacy and modern test systems through automated data format conversion tools"
+        ],
+
+        "image": "assets/img/projects-etel-product.jpg",
+
+        "links": [            
+            {
+                "label": "Standard Test Concept",
+                "url": "assets/img/projects-etel-diagram.jpg",
+                "type": "doc"
+            }
         ]
     },
     {
         "id": "less-production-line-automation",
-        "title": "Production Line Automation System",
+        "title": "Industrial Production Line Automation",
         "year": "2022-2024",
-        "role": "Automation Engineer",
-        "description": "PLC-based automation system for industrial production lines with integrated control and HMI interfaces.",
-        "stack": [
-        {
-            "name": "Beckhoff PLC",
-            "icon": "assets/icons/beckhoff.svg"
-        },
-        {
-            "name": "TwinCAT 3",
-            "icon": null
-        },
-        {
-            "name": "HMI",
-            "icon": "assets/icons/hmi.svg"
-        },
-        {
-            "name": "Industrial Data Integration",
-            "icon": "assets/icons/industrialdata.svg"
-        }
+        "role": "Automation Engineer (Beckhoff PLC / TwinCAT)",
+
+        "description": "Development and optimization of PLC-based automation systems for industrial production lines, including control logic, motion systems, HMI design, and full lifecycle contribution to new production line deployment.",
+
+         "stack": [
+            { "name": "Beckhoff PLC", "icon": "assets/icons/beckhoff.svg" },
+            { "name": "TwinCAT 3" },
+            { "name": "Motion Control" },
+            { "name": "HMI", "icon": "assets/icons/hmi.svg" },
+            { "name": "Industrial Automation" },
+            { "name": "Git", "icon": "assets/icons/git.svg" }
         ],
+            
         "contributions": [
-            "Developed PLC control logic for production automation systems",
-            "Designed HMI interfaces for operator monitoring and interaction",
-            "Implemented PLC communication with external data systems via TwinCAT 3",
-            "Integrated control logic into industrial production workflows"
+            "Developed and maintained PLC control software for industrial production lines using Beckhoff systems",
+            "Designed and implemented HMI interfaces for operator interaction, monitoring, and control",
+            "Contributed to the full development lifecycle of a new production line, from design to deployment",
+            "Designed and implemented the core control algorithm for automated production sequences based on recipe-driven parameters and positional tracking",
+            "Implemented synchronization logic for continuous material processing using motion control systems and virtual coupling techniques",
+            "Improved motion control reliability by refactoring and stabilizing shared control sequences for servo and stepper motor systems",
+            "Worked on legacy system upgrades, simplifying code structure and improving maintainability",
+            "Coordinated a small software team and managed version control workflows using Git",
+            "Supervised electrical work and ensured correct integration between software and hardware systems"
         ],
+
         "impact": [
-            "Enabled production of 100+ units across multiple work orders",
-            "Supported deployment of new product types in industrial production line"
+            "Contributed to the production of 100+ units across 20+ work orders in industrial environment",
+            "Enabled automated production of a new product type through implementation of core control logic",
+            "Reduced production cycle time by up to 6x (from ~60s to ~10s) through process optimization",
+            "Improved system stability and reliability in motion control operations",
+            "Supported successful deployment of a new production line from design phase to operation"
+        ],
+
+        "image": "assets/img/projects-less-context-picture.jpg"        
+    },
+    {
+        "id": "cern-rf-control-systems",
+        "title": "RF Cavities Control Systems (PS & SPS)",
+        "year": "2018-2020",
+        "role": "Control & Automation Engineer",
+
+        "description": "Design and development of PLC-based control systems for RF acceleration cavities at CERN, including system upgrades for PS and new control architecture for SPS high-power RF infrastructure.",
+
+        "stack": [
+            { "name": "Beckhoff PLC", "icon": "assets/icons/beckhoff.svg" },
+            { "name": "TwinCAT 3" },
+            { "name": "TwinCAT 2" },
+            { "name": "HMI", "icon": "assets/icons/hmi.svg" },
+            { "name": "Industrial Automation" },
+            { "name": "Control Systems Engineering" },
+            { "name": "Electrical Design" }
+        ],
+
+        "contributions": [
+            "Designed PLC-based control systems for RF cavities and solid-state power amplifiers (SSPA)",
+            "Defined system architecture including I/O mapping, control logic and inter-PLC communication",
+            "Developed PLC software for startup sequences, fault handling and event logging",
+            "Designed HMI interfaces for system monitoring and operation",
+            "Contributed to electrical design including control cabinets and power systems",
+            "Collaborated with multidisciplinary teams to define system specifications"           
+        ],
+
+        "impact": [
+            "Delivered control system upgrade for PS RF cavities (40–80 MHz), currently operational",
+            "Contributed to development of SPS 200 MHz RF cavity control system",
+            "Supported large-scale RF infrastructure with thousands of amplifier modules",
+            "Work presented at ICALEPCS 2019 conference (New York)"
+        ],
+
+        "image": "assets/img/projects-cern-control-plc-master.jpg",
+
+        "links": [
+            {
+                "label": "ICALEPCS Poster",
+                "url": "assets/documents/projects-cern-icalepcs-poster.pdf",
+                "type": "paper"
+            }
         ]
     },
     {
-        "id": "cern-control-systems",
-        "title": "CERN Control & Real-Time Systems",
-        "year": "2016-2020",
-        "role": "Control & Real-Time Software Engineer",
-        "description": "Development of control, data acquisition and experimental systems for scientific and accelerator infrastructure.",
+        "id": "cern-robotics-data-acquisition",
+        "title": "Robotics & Data Acquisition Systems",
+        "year": "2015-2017",
+        "role": "Electronics & Real-Time Software Engineer",
+
+        "description": "Development of robotic inspection systems and real-time data acquisition platforms for superconducting magnet testing, combining embedded systems, LabVIEW-based control and database-driven web tools.",
+
         "stack": [
-        {
-            "name": "Beckhoff PLC",
-            "icon": "assets/icons/beckhoff.svg"
-        },
-        {
-            "name": "LabVIEW",
-            "icon": "assets/icons/labview.svg"
-        },
-        {
-            "name": "MATLAB",
-            "icon": "assets/icons/matlab.svg"
-        },
-        {
-            "name": "C / C++",
-            "icon": "assets/icons/cplusplus.svg"
-        },
-        {
-            "name": "PHP",
-            "icon": "assets/icons/php.svg"
-        },
-        {
-            "name": "Arduino",
-            "icon": "assets/icons/arduino.svg"
-        },
-        {
-            "name": "Database Querying",
-            "icon": null
-        }
+            { "name": "LabVIEW", "icon": "assets/icons/labview.svg" },
+            { "name": "LabVIEW RT", "icon": "assets/icons/labview.svg" },
+            { "name": "MATLAB", "icon": "assets/icons/matlab.svg" },
+            { "name": "C / C++", "icon": "assets/icons/cplusplus.svg" },
+            { "name": "PHP", "icon": "assets/icons/php.svg" },
+            { "name": "Arduino", "icon": "assets/icons/arduino.svg" },
+            { "name": "MySQL / Oracle" },
+            { "name": "Real-Time Systems" }
         ],
-        "contributions": [
-            "Developed PLC-based control systems for accelerator infrastructure",
-            "Built real-time data acquisition systems for superconducting magnet testing using LabVIEW",
-            "Developed embedded C/C++ systems for sensor calibration and robotic applications",
-            "Created PHP-based scripts for database interaction and experimental data management",
-            "Supported scientific data processing and system integration across multiple subsystems"
+
+        "contributions": [            
+            "Developed real-time data acquisition and protection systems for superconducting magnet testing using LabVIEW and NI cRIO",
+            "Implemented quench protection logic with high-frequency threshold-based monitoring and real-time actuation",
+            "Built PHP-based tools for database interaction and experimental data visualization",
+            "Calibrated and integrated multiple sensor systems (tactile, laser, barcode) using embedded platforms",
+            "Worked on robotic inspection system (TIM) including communication protocol migration to CAN"
         ],
+
         "impact": [
-            "Contributed to scientific infrastructure used in particle accelerator experiments",
-            "Supported validation of superconducting magnet and experimental systems"
+            "Enabled continuous acquisition of 30+ sensor channels with real-time processing and storage",
+            "Improved safety and reliability of superconducting magnet testing through automated protection systems",
+            "Contributed to deployment of robotic inspection systems in CERN accelerator environment",
+            "Results presented at EUCAS 2017 conference"
+        ],
+
+        "image": "assets/img/projects-cern-robotics-tim.jpg",
+        
+        "links": [
+            {
+                "label": "Technical Summary",
+                "url": "assets/documents/projects-cern-data-acq-summary.pdf",
+                "type": "doc"
+            },
+            {
+                "label": "EUCAS Poster",
+                "url": "assets/documents/projects-cern-eucas-poster.pdf",
+                "type": "paper"
+            },
+            {
+                "label": "cRIO Software Flowchart",
+                "url": "assets/img/projects-cern-data-acquisition-diagram.jpg",
+                "type": "paper"
+            }
         ]
     }
 ]

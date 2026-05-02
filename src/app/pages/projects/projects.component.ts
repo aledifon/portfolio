@@ -13,6 +13,8 @@ import { RouterLink } from '@angular/router';
 })
 export class ProjectsComponent {
 
+  // $ indicates this is an Observable (RxJS stream, not a final value)
+  // ! tells TypeScript not to require immediate initialization (it will be assigned later in the lifecycle)
   public projects$!: Observable<Project[]>;
 
   constructor(private projectsService: ProjectsService){
