@@ -10,7 +10,11 @@
 
     <div class="articles">
         @for (p of projects$ | async; track p.id) {
-            <article class="project">     
+            <article class="project" 
+                [ngClass]="{ 
+                    plc: p.id === 'cern-rf-control-systems', 
+                    robotics: p.id === 'cern-robotics-data-acquisition' 
+                }">     
             
                 <header class="project-header">
                     <h2 class="project-title">
@@ -29,6 +33,12 @@
                         <span class="meta-value">{{p.role}}</span>
                     </div>
                 </section>        
+                
+                <section class="project-img">
+                    @if(p.image){
+                        <img src="{{p.image}}" alt="{{p.id}} + -context-image">
+                    }   
+                </section>
 
                 <section class="project-stack">                    
                     <h3 class="meta-label">Stack</h3>
