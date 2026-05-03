@@ -4,7 +4,7 @@ interface StackItem {
   invert?: boolean;
 }
 
-type LinkType = 'github' | 'paper' | 'demo' | 'doc' | 'video';
+type LinkType = 'github' | 'paper' | 'poster' | 'demo' | 'doc' | 'video';
 
 export interface Project{
     id: string;

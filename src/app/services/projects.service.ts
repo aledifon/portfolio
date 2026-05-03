@@ -52,6 +52,7 @@ export class ProjectsService {
     return{
       ...p,                                              // copy all backend fields
       isExpanded: false,                                 // default UI state
+      showLinks: false,
       contributionsVisible: p.contributions.slice(0,2),  // visible UI data
       impactVisible: p.impact.slice(0,2)
     };

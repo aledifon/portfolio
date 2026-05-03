@@ -113,16 +113,34 @@
                             }                    
                     </button>
 
-                    <button class="links-button" 
-                            [ngClass]="{ 
-                                'show-button': p.isExpanded,
-                                disabled: !p.isExpanded
-                            }"
-                            (click)="showMessage()">
-                        See links
-                    </button>
+                    @if(p.links){
+                        <button class="links-button" 
+                                [ngClass]="{ 
+                                    'show-button': p.isExpanded,
+                                    disabled: !p.isExpanded
+                                }"
+                                (click)="ShowHideLinks(p)">
+                            See links
+                        </button>    
+                    }                
 
                 </section>
+
+                <!-- Project links section -->                
+                <section class="project-links"
+                        [ngClass]="{ show: p.showLinks && p.links }">
+
+                    <h3 class="links-title">Links</h3>
+
+                    <ul class="links-list">
+                        @for (item of p.links; track $index) {                                
+                            <li>
+                                <a href="{{item.url}}" target="_blank">{{item.label}} ({{item.type}})</a>
+                            </li>                              
+                        } 
+                    </ul>                            
+
+                </section>                
             
             </article>
         }    

@@ -33,7 +33,7 @@
 
         "links": [            
             {
-                "label": "GitHub",
+                "label": "Angular portfolio repository",
                 "url": "https://github.com/aledifon/portfolio",
                 "type": "github"
             }
@@ -163,7 +163,7 @@
             {
                 "label": "ICALEPCS Poster",
                 "url": "assets/documents/projects-cern-icalepcs-poster.pdf",
-                "type": "paper"
+                "type": "poster"
             }
         ]
     },
@@ -212,12 +212,12 @@
             {
                 "label": "EUCAS Poster",
                 "url": "assets/documents/projects-cern-eucas-poster.pdf",
-                "type": "paper"
+                "type": "poster"
             },
             {
                 "label": "cRIO Software Flowchart",
                 "url": "assets/img/projects-cern-data-acquisition-diagram.jpg",
-                "type": "paper"
+                "type": "doc"
             }
         ]
     }

@@ -37,9 +37,12 @@ export class ProjectsComponent {
     p.contributionsVisible = p.isExpanded ? p.contributions :p.contributions.slice(0,2);
 
     p.impactVisible = p.isExpanded ? p.impact :p.impact.slice(0,2);
+
+    if (!p.isExpanded)
+      p.showLinks = false;
   }
 
-  showMessage(): void{
-    alert("pressed button");
+  ShowHideLinks(p: ProjectUI): void{
+    p.showLinks = !p.showLinks;
   }
 }

@@ -383,6 +383,55 @@
   cursor: default;
 }
 
+.project-links {  
+  text-align: center;
+
+  max-height: 0;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(6px);
+
+  transition: 
+    max-height 0.6 ease-in-out,
+    opacity 0.25s ease, 
+    transform 0.25s ease;    
+}
+
+.project-links.show {
+  max-height: 200px;
+  margin-top: 15px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.links-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: #4da3ff;
+  font-weight: 500;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.links-list a:hover {
+  opacity: 0.8;
+  transform: translateX(2px);
+}
+
+
 // CTA SECTION
 .cta{
   display: flex;
