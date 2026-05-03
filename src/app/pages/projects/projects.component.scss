@@ -390,19 +390,23 @@
   overflow: hidden;
 
   opacity: 0;
-  transform: translateY(6px);
+  margin-top: 0px;  
 
   transition: 
-    max-height 0.6 ease-in-out,
-    opacity 0.25s ease, 
-    transform 0.25s ease;    
+    max-height 0.2s ease,
+    opacity 0.1s ease,
+    margin-top 0.15s ease;    
 }
 
 .project-links.show {
   max-height: 200px;
   margin-top: 15px;
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1;  
+
+  transition:
+    max-height 0.4s ease,
+    opacity 0.2s ease,
+    margin-top 0.25s ease;  
 }
 
 .links-title {
