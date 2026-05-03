@@ -13,9 +13,10 @@
             <article class="project" 
                 [ngClass]="{ 
                     plc: p.id === 'cern-rf-control-systems', 
-                    robotics: p.id === 'cern-robotics-data-acquisition' 
-                }">     
-            
+                    robotics: p.id === 'cern-robotics-data-acquisition',
+                    expanded: p.isExpanded
+                }">                             
+
                 <header class="project-header">
                     <h2 class="project-title">
                         {{p.title}}
@@ -76,10 +77,12 @@
                     <div class="content-block">
                         <h3 class="content-label">Key contributions</h3>
                         <ul>
-                            @for (item of p.contributions; track $index) {
-                                <li class="content-item">
-                                    {{item}}
-                                </li>
+                            @for (item of p.contributionsVisible; track $index) {
+                                <!-- @if(p.isExpanded ||  $index < 2){                                 -->
+                                    <li class="content-item">
+                                        {{item}}
+                                    </li>
+                                <!-- } -->
                             }
                         </ul>
                     </div>            
@@ -87,15 +90,39 @@
                     <div class="content-block">
                         <h3 class="content-label">Impact</h3>
                         <ul>
-                            @for (item of p.impact; track $index) {
-                                <li class="content-item">
-                                    {{item}}
-                                </li>
+                            @for (item of p.impactVisible; track $index) {
+                                <!-- @if(p.isExpanded ||  $index < 2){                                                                     -->
+                                    <li class="content-item">
+                                        {{item}}
+                                    </li>
+                                <!-- } -->
                             }                        
                         </ul>
-                    </div>
+                    </div>                    
 
-                </section>  
+                </section>
+                
+                <section class="project-buttons">
+
+                    <button class="expand-button" (click)="toogleProjectExpand(p)">
+                            @if(p.isExpanded){
+                                Collapse
+                            }
+                            @else{
+                                See more...
+                            }                    
+                    </button>
+
+                    <button class="links-button" 
+                            [ngClass]="{ 
+                                'show-button': p.isExpanded,
+                                disabled: !p.isExpanded
+                            }"
+                            (click)="showMessage()">
+                        See links
+                    </button>
+
+                </section>
             
             </article>
         }    
