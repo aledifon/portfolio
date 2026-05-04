@@ -183,6 +183,10 @@ h1{
   transition: width 0.3s ease;    // For Horizontal filling Fx
 }
 
+.contact-form button:disabled{
+  cursor: not-allowed;
+}
+
 // SOCIAL ICONS SECTION
 .contact-info{    
   margin-bottom: 40px;    
