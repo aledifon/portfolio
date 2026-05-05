@@ -1,3 +1,19 @@
+:host {
+  display: block;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 // Page title
 h1{
   font-weight: 500;   
@@ -102,6 +118,15 @@ h1{
   font-size: inherit;
 }
 
+.contact-field.invalid input,
+.contact-field.invalid textarea{
+  border-color: #ef4444; 
+}
+
+.contact-field.invalid span{
+  color: #ef4444;
+}
+
 .contact-field input,
 .contact-field textarea{
   text-align: justify;    
@@ -119,6 +144,13 @@ h1{
   outline: none;
   border-color: #4da3ff;
   box-shadow: 0 0 0 1px #4da3ff;
+}
+
+.contact-field.invalid input:focus ,
+.contact-field.invalid textarea:focus{
+  outline: none;
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px #fca5a5;
 }
 
 // Submit button
@@ -183,8 +215,40 @@ h1{
   transition: width 0.3s ease;    // For Horizontal filling Fx
 }
 
-.contact-form button:disabled{
-  cursor: not-allowed;
+.contact-form .form-result {  
+  text-align: center;
+
+  margin-top: 0;
+  padding: 0;
+
+  opacity: 0;
+  transform: translateY(-6px) scale(0.98);
+
+  height: auto;
+
+  pointer-events: none;
+
+  transition: 
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    margin-top 0.25s ease;    
+}
+
+.contact-form .form-result.success {
+  color: #22c55e;
+  font-weight: 500;
+
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(34, 197, 94, 0.08);
+
+  margin-top: 15px;
+
+  opacity: 1;
+  transform: translateY(0) scale(1);
+
+  pointer-events: auto;  
 }
 
 // SOCIAL ICONS SECTION

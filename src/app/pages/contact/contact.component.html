@@ -10,29 +10,30 @@
         </p>
 
         <form [formGroup]="form" (ngSubmit)="onSubmit()">    
-            <div class="contact-field">
+            <div class="contact-field" 
+                [ngClass]="{ 'invalid': name?.invalid && name?.touched }" >
                 <label for="name-form">Name</label>
                 <input type="text" 
                 id="name-form" name="name-form" 
                 placeholder="Enter your Name"
                 formControlName="name">
 
-                @if(form.get('name')?.invalid && form.get('name')?.touched){
+                @if(name?.invalid && name?.touched){
                     <div>
 
-                        @if(form.get('name')?.errors?.['required']) {
+                        @if(name?.errors?.['required']) {
                             <span>
                                 The name is required
                             </span>
                         }  
 
-                        @if(form.get('name')?.errors?.['minlength']){
+                        @if(name?.errors?.['minlength']){
                             <span>
                                 The name is too short
                             </span>
                         }
 
-                        @if(form.get('name')?.errors?.['maxlength']){
+                        @if(name?.errors?.['maxlength']){
                             <span>
                                 The name is too long
                             </span>
@@ -42,53 +43,86 @@
                 }
             </div>
 
-            <div class="contact-field">
+            <div class="contact-field" 
+                [ngClass]="{ 'invalid': email?.invalid && email?.touched }" >
                 <label for="email-form">Email</label>
                 <input type="email" 
                 id="email-form" name="email-form" 
                 placeholder="Enter your email"
                 formControlName="email">
 
-                @if(form.get('email')?.invalid && form.get('email')?.touched){
+                @if(email?.invalid && email?.touched){
                     <div>
 
-                        @if(form.get('email')?.errors?.['required']) {
+                        @if(email?.errors?.['required']) {
                             <span>
                                 The email is required
                             </span>
                         }   
                         
-                        @if(form.get('email')?.errors?.['email']){
+                        @if(email?.errors?.['email']){
                             <span>
                                 The email has a wrong format
                             </span>
-                        }                        
+                        } 
+                        
+                        @if(email?.errors?.['maxlength']){
+                            <span>
+                                The email is too long
+                            </span>
+                        } 
 
                     </div>
                 }
             </div>
 
-            <div class="contact-field">
+            <div class="contact-field" 
+                [ngClass]="{ 'invalid': subject?.invalid && subject?.touched }" >
                 <label for="subject-form">Subject</label>
                 <input type="text" 
                 id="subject-form" name="subject-form" 
                 placeholder="Enter the subject"
                 formControlName="subject">
+
+                @if(subject?.invalid && subject?.touched){
+                    <div>
+                        
+                        @if(subject?.errors?.['maxlength']){
+                            <span>
+                                The subject is too long
+                            </span>
+                        } 
+
+                    </div>
+                }
             </div>            
 
-            <div class="contact-field message">
+            <div class="contact-field message" 
+                [ngClass]="{ 'invalid': message?.invalid && message?.touched }" >
                 <label for="message-form">Message</label>
                 <textarea id="message-form" 
                 name="message-form" 
                 placeholder="Enter your message"
                 formControlName="message"></textarea>     
                 
-                @if(form.get('message')?.invalid && form.get('message')?.touched){
+                @if(message?.invalid && message?.touched){
                     <div>
 
-                        @if(form.get('message')?.errors?.['required']) {
+                        @if(message?.errors?.['required']) {
                             <span>
                                 The message is required
+                            </span>
+                        }  
+
+                        @if(message?.errors?.['minlength']) {
+                            <span>
+                                The message is too short
+                            </span>
+                        }  
+
+                        @if(message?.errors?.['maxlength']) {
+                            <span>
+                                The message is too long
                             </span>
                         }  
 
@@ -96,7 +130,17 @@
                 }
             </div>
 
-            <button type="submit" [disabled]="form.invalid">Send message</button>
+            <!-- <button type="submit">Send message</button> -->
+            <button type="submit" 
+                [disabled]="isSubmitting()"
+                [ngClass]="{'loading': isSubmitting()}">
+                {{ isSubmitting() ? 'Sending...' : 'Send message' }}
+            </button>
+            
+            <div class="form-result" [ngClass]="{'success': isSuccess()}">
+                ✔ Message sent successfully! 
+            </div>
+            
         </form>
     </section>
 

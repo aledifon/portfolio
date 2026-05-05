@@ -47,11 +47,15 @@
                 <img class="footer-icon github" src="assets/icons/github.svg" alt="Github logo">        
             </a>
         </div>
-        
-        <div class="footer-right">
-            <a href=#>
-                <img class="back-to-top" src="assets/icons/backtotop.svg" alt="Back to top">        
-            </a>
+
+        <div class="footer-right">      
         </div>
+                                
+        <button class="back-to-top"
+            [ngClass]="{'show': showBackToTop}"
+            (click)="scrollToTop()">
+            <img src="assets/icons/backtotop.svg" alt="Back to top">        
+        </button>        
+        
     </footer>
 </div>
