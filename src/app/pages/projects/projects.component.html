@@ -12,7 +12,9 @@
         @for (p of projects$ | async; track p.id) {
             <article class="project" 
                 [ngClass]="{ 
-                    plc: p.id === 'cern-rf-control-systems', 
+                    plc: p.id === 'cern-rf-control-systems',
+                    motion: p.id === 'etel-motion-control-testing',
+                    autom: p.id === 'less-production-line-automation',
                     robotics: p.id === 'cern-robotics-data-acquisition',
                     expanded: p.isExpanded
                 }">                             
@@ -154,7 +156,7 @@
     </p>
     <div class="cta-links">     
         <!-- Go to Contact Page -->    
-        <a routerLink="/contact" class="cta-link primary">
+        <a routerLink="/contact" class="cta-link">
             Let's talk! →
         </a>
     </div>

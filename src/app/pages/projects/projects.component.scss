@@ -460,7 +460,7 @@
   flex-direction: column;
   // flex-wrap: wrap;
   // gap: 30px;
-  margin-top: 60px 0;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -479,7 +479,7 @@
   gap: 30px;  
 }
 
-.cta a.primary{
+.cta a{
   font-weight: 600;
   border-width: 2px;
 
@@ -532,4 +532,127 @@
   color: #0f172a;
   border-color: #0f172a;
   opacity: 1;
+}
+
+// Responsiveness media queries - Tablet 768px
+@media (max-width: 768px) {
+
+  /* TITLE */
+  .projects h1 {
+    font-size: 34px;
+    font-weight: 700;    
+    margin-bottom: 10px;
+  }
+
+  /* PROJECT INTRO */
+  .projects .projects-intro {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 16px;
+  }
+
+  /* PROJECT CARDS */
+  .project-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .project-meta {
+    font-size: 14px;
+  }
+
+  .content-block p,
+  .content-block ul {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .project-content .content-label,
+  .project-stack .meta-label {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .stack-item span {
+    font-size: 12px;
+  }
+
+  /* STACK ICONS */
+  .stack-item .badge,
+  .stack-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* PROJECT IMAGE */
+  .project-img {
+    height: 220px;
+  }
+  .project.motion .project-img img{
+    object-position: center 25%;
+  }
+
+  .project.robotics .project-img img{
+    object-position: 50% 20%;
+  }
+
+  /* PROJECT BUTTONS */
+  .project-buttons button {
+    font-size: 14px;
+    height: 42px;
+    width: 140px;
+  }
+
+  .links-title {
+    font-size: 14px;
+  }
+
+  .links-list a {
+    font-size: 14px;
+  }
+
+  /* PROJECT CARD SPACING */
+  .articles {
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 36px;
+  }
+
+  .project {
+    max-width: 100%;
+    padding: 16px; /* before 20 */
+    gap: 10px; 
+  }
+
+  .project-content{
+    gap: 10px; /* before 15 */
+  }
+
+  /* REMOVE ALTERNANCE */
+  .project:nth-child(odd),
+  .project:nth-child(even) {
+    align-self: center;
+  }
+
+  /* CTA */
+  .cta-intro{
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .cta a {
+    font-size: 14px;
+    height: 42px;
+    width: 140px;
+  }
+
+  .cta {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .cta-links {
+    gap: 20px;
+  }
+
 }
