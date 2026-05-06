@@ -1,3 +1,5 @@
+/*BASE (desktop-first)*/
+
 .app-layout {
   min-height: 100vh;
   display: flex;
@@ -70,16 +72,6 @@
 .header-icon:hover{
     opacity: 1;
     transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-    .social-icons {
-        display: none;
-    }
-
-    .nav-links {
-        gap: 10px;
-    }
 }
 
 .menu-name{
@@ -224,4 +216,61 @@
 
     filter: invert(1) 
         drop-shadow(0 4px 10px rgba(77, 163, 255, 0.25));
+}
+
+// Responsiveness media queries - Tablet 768px
+@media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 768px) {
+
+    /* PAGE-CONTENT */
+
+    .container {
+        padding: 0 32px;
+    }
+
+    /* HEADER */
+
+    .social-icons {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .menu-name {
+        font-size: 14px;
+    }
+
+    .top-bar {
+        padding: 0 16px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 10px 16px;
+    }
+
+    .foter-icon{
+        width: 22px;
+        height: 22px;
+    }
+
+    .footer-center {
+        gap: 10px;
+    }
+
+    /* BACK-TO-TOP button*/
+    .back-to-top {
+        right: 16px;             
+    }
 }

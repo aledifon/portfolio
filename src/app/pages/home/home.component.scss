@@ -1,4 +1,4 @@
-// HERO NAME
+// Fade-in page switching Fx
 :host {
   display: block;
   animation: fadeIn 0.25s ease;
@@ -15,23 +15,24 @@
   }
 }
 
-.hero-title{    
-    font-weight: 500;   
-    font-size: 48px; 
-    margin-bottom: -5px;       
+// HERO NAME
+.hero-title{
+    font-weight: 500;
+    font-size: 48px;
+    // margin-bottom: -5px;
     text-align: center;
 }
 
 .hero-title .highlight{
     font-weight: 700;
-    color: #4da3ff;            
+    color: #4da3ff;
 }
 
 .fade{
     // color: #e5e7eb;
     color: #e2e8f0;
     opacity: 0;
-    margin-right: 10px;    
+    margin-right: 10px;
     transition: opacity 1s ease-in;
 }
 
@@ -42,17 +43,18 @@
 // HERO ROL
 .hero-subtitle{
     margin-bottom: 20px;
-    font-size: 20px;    
-    // color: #e5e7eb;    
+    // margin-top: 5px;
+    font-size: 20px;
+    // color: #e5e7eb;
     color: #cbd5f5;
     // color: #cbd5e1;
-    transition: opacity 0.8s ease-in;    
+    transition: opacity 0.8s ease-in;
     text-align: center;
 }
-.hero-subtitle.hide{    
+.hero-subtitle.hide{
     opacity: 0;
 }
-.hero-subtitle.show{    
+.hero-subtitle.show{
     opacity: 1;
 }
 
@@ -65,16 +67,16 @@
 
 // HERO DESCRIPTION
 .hero-description{
-    margin-bottom: 30px;    
-    line-height: 1.6;    
-    // color: #dbeafe;    
-    color: #bfdbfe;    
+    margin-bottom: 30px;
+    line-height: 1.6;
+    // color: #dbeafe;
+    color: #bfdbfe;
     max-width: 700px;
 }
 .hero-text{
-    margin-bottom: 18px;   
-    text-align: justify;    
-    font-size: 18px; 
+    margin-bottom: 18px;
+    text-align: justify;
+    font-size: 18px;
 }
 
 // CALL TO ACTION
@@ -96,7 +98,7 @@
 
 a{
     position: relative;
-    overflow: hidden;    
+    overflow: hidden;
     height: 45px;
     width: 160px;
 
@@ -109,12 +111,12 @@ a{
 
     text-decoration: none;
     color: #f8fafc;
-            
-    border: 1px solid #4da3ff;          // For Horizontal filling Fx    
+
+    border: 1px solid #4da3ff;          // For Horizontal filling Fx
     background: transparent;
     // border-bottom: 2px solid #4da3ff;   // For Vertical filling Fx
 
-    z-index: 1;    
+    z-index: 1;
     transition: color 0.3s ease-out;
 
     border-radius: 10px;
@@ -126,7 +128,7 @@ a::before {
 
     // bottom: 0;      // For Horizontal filling Fx
     // top: auto;      // For Horizontal filling Fx
-    top: 0;         // For vertical filling Fx    
+    top: 0;         // For vertical filling Fx
     left: 0;
 
     // For Horizontal filling Fx
@@ -153,4 +155,58 @@ a:hover {
   color: #0f172a;
   border-color: #0f172a;
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+    /* HERO TITLE */
+
+    .hero-title{
+        font-size: 34px;
+    }
+
+    .hero-subtitle{
+        font-size: 16px;
+        margin: 0px;
+    }
+
+    /* HERO CONTENT */
+
+    .hero-content{
+        flex-direction: column;
+        align-items: center;   
+        gap: 26px;
+        margin-top: 26px;             
+    }
+
+    .hero-text{
+        font-size: 16px;        
+        text-align: center;
+        margin: 0;
+    }
+
+    a{
+        width: 140px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .hero-description{
+        order: 1;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cta{
+        order: 2;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
