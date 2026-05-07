@@ -377,3 +377,14 @@ Sticky footer layout (no position fixed needed)
     //     bottom: 12px;             
     // }
 }
+
+@media (max-width: 350px){    
+    .footer-left {
+        font-size: 11px; /* no más bajo de esto */
+        max-width: 70px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        line-height: 1.1;
+    }    
+}

@@ -659,6 +659,109 @@
 
 @media (max-width: 480px) {
 
+  /* GLOBAL LATERAL BREATHING SPACE */
+
+  .projects,
+  .cta {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ARTICLES CONTAINER */
+
+  .articles {
+    gap: 24px;
+  }
+
+  /* PROJECT CARD */
+
+  .project {
+    max-width: 100%;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .project.expanded {
+    max-height: 2600px;
+  }
+
+  /* REMOVE ALTERNANCE (if still applied) */
+
+  .project:nth-child(odd),
+  .project:nth-child(even) {
+    align-self: center;
+  }
+
+  /* PROJECT IMAGE */
+
+  .project-img {
+    height: 180px;
+    margin: 6px 0;
+  }
+
+  /* PROJECT STACK */
+
+  .project-stack {
+    margin: 2px 0;    
+    max-width: 300px;
+  }
+
+  .stack-list {
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .stack-item {
+    width: 68px;
+    gap: 4px;
+  }
+
+  .stack-item .badge,
+  .stack-item img {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* PROJECT CONTENT */
+
+  .project-content {
+    gap: 8px;
+  }
+
+  .content-block ul {
+    padding-left: 18px;
+  }
+
+   /* PROJECT BUTTONS */
+
+  .project-buttons {    
+    gap: 12px;
+  }
+
+  .project-buttons button {
+    font-size: 14px;
+    height: 42px;
+    width: 140px;
+  }
+
+   /* LINKS */
+
+  .project-links.show {
+    margin-top: 10px;
+  }
+
+   /* CTA */
+
+  .cta {
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .cta-links {
+    gap: 16px;
+  }
+
   /* TITLE */
 
   .projects h1 {
