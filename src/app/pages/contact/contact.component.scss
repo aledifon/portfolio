@@ -331,7 +331,7 @@ h1{
   }
 
   .contact-form .title{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;    
     letter-spacing: 0.5px;
@@ -391,8 +391,8 @@ h1{
   }
 
   .contact-icon{
-    width: 42px;
-    height: 42px;    
+    width: 44px;
+    height: 44px;    
   }
 
   .contact-info ul{
@@ -403,5 +403,70 @@ h1{
 
   .contact-item span{
     font-size: 14px;
+    // width: ;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* TITLE PAGE */ 
+
+   h1{
+    font-size: 28px;    
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 10px;    
+  }  
+
+  .contact-form{
+    margin-bottom: 0px;  
+    max-width: 90%;      
+  }
+
+  .contact-form .title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;    
+    letter-spacing: 0.5px;
+  }
+
+  /* GENERAL SPACING */
+
+  .contact-content{            
+    // margin: 0 auto;    
+    gap: 24px;
+  }
+
+  .contact-form .description-text{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;    
+    text-align: center;
+  }
+
+  .contact-form form{    
+    gap: 16px;
+  }  
+
+  .contact-field label{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 4px;
+  }
+
+  .contact-field.message{
+    margin-bottom: 4px;
+  }
+
+  .contact-info {
+    max-width: 90%;        
+  }
+
+  .contact-info ul{
+    gap: 20px;    
+  }  
+
+  .contact-item span{
+    font-size: 13px;
   }
 }

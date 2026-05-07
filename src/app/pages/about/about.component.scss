@@ -17,28 +17,35 @@
 
 // Description section
 .description{
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   line-height: 1.6;
   // color: #dbeafe;
   color: #bfdbfe;
 }
 
+.description,
+.tech-stack,
+.video-pitch{
+  margin-bottom: 32px;
+}
+
 .description h1{
   font-weight: 500;
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .description .description-text{
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   text-align: justify;
   font-size: 18px;
 }
 
 // Unity card
 .project-card{
-  margin: 30px 0px;
+  // max-width: 620px;
+  margin: 24px auto;
   padding: 18px 20px;
 
   background: rgba(77, 163, 255, 0.05);
@@ -71,7 +78,7 @@
 
 // Stack section
 .tech-stack{
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   line-height: 1.6;
   // color: #dbeafe;
   color: #bfdbfe;
@@ -79,8 +86,8 @@
 
 .tech-stack h2{
   font-weight: 500;
-  font-size: 38px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 14px;
   text-align: center;
 }
 
@@ -94,8 +101,10 @@
 
 // Stack using grid
 .stack{
+  // max-width: 750px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 32px;
   justify-items: center;
 }
@@ -148,7 +157,7 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   line-height: 1.6;
   // color: #dbeafe;
   color: #bfdbfe;
@@ -156,8 +165,8 @@ ul{
 
 .video-pitch h2{
   font-weight: 500;
-  font-size: 38px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 14px;
   text-align: center;
 }
 
@@ -169,6 +178,8 @@ ul{
 }
 
 .video-wrapper{
+  width: 100%;
+  max-width: 700px;
   display: inline-block;
   transition: transform 0.25s ease, box-shadow 0.3s ease;
 }
@@ -181,8 +192,8 @@ ul{
 }
 
 .video-pitch video{
-  // width: 100%;
-  max-width: 700px;
+  width: 100%;
+  // max-width: 700px;
   height: auto;
   border-radius: 8px;
 
@@ -207,14 +218,14 @@ ul{
     justify-content: center;
     flex-direction: column;
     // flex-wrap: wrap;
-    // gap: 30px;
-    margin-top: 60px 0;
+    // gap: 30px;    
+    margin-top: 32px;
     margin-bottom: 20px;
 }
 
 .cta-intro {
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   color: #e2e8f0;
   margin-bottom: 20px
 }
@@ -305,15 +316,16 @@ ul{
     font-weight: 700;
   }
 
-  .video-pitch h2 {
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  .tech-stack h2{
+  .video-pitch h2,
+  .tech-stack h2 {
     font-size: 22px;
     font-weight: 600;
+    margin-bottom: 10px;
   }  
+
+  .project-card{
+    margin: 20px 0;
+  }
 
   .stack-category h3,
   .project-card h3 {
@@ -352,6 +364,8 @@ ul{
 
   .cta a {
     font-size: 14px;
+    width: 140px;
+    height: 42px;   
   }
 
   /* STACK ICONS SIZE */
@@ -364,32 +378,31 @@ ul{
     gap: 4px;
   }
 
+  .stack{
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
   /* GLOBAL LATERAL BREATHING SPACE */
   .description,
   .tech-stack,
   .video-pitch,
   .cta {
-    max-width: 640px;
+    // max-width: 640px;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .video-pitch p,
-  .video-pitch video{
-    max-width: 640px;
-  }
-
-  .video-pitch h2{
-    margin-bottom: 16px;
-  }
-
   /* SECTION SEPARATION */
-  .description {
-    margin-bottom: 32px;
+  .description,
+  .tech-stack,
+  .video-pitch{
+    margin-bottom: 24px;
   }
 
   .description h1{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .description .description-text,
@@ -397,16 +410,129 @@ ul{
     margin-bottom: 16px;
   }
 
-  .tech-stack {
-    margin-bottom: 32px;
-  }
-
-  .video-pitch {
-    margin-bottom: 32px;
-  }
-
   .cta {
     margin-bottom: 20px;
+    margin-top: 28px;
   }
 
+}
+
+@media (max-width: 480px) {
+
+   /* TITLES */
+
+  .description h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .video-pitch h2,
+  .tech-stack h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .project-card{
+    padding: 14px 16px;
+    // margin: 18px 0;
+    max-width: 38ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stack-category h3,
+  .project-card h3 {
+    font-size: 15px;    
+  }
+
+  .project-card-text {
+    font-size: 14px;    
+    opacity: 0.9;
+    text-align: left;    
+  }
+
+  .project-card-link {
+    font-size: 14px;
+    font-weight: 500;    
+  }
+
+  /* BODY TEXT */
+
+  .description .description-text,
+  .video-pitch p{
+    font-size: 14px;    
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  /* SMALL TEXT */
+
+  .stack-item span {
+    font-size: 14px;
+    width: 100px;
+    // width: auto;
+    // max-width: 90px;
+  }
+
+  .cta-intro {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .cta a {
+    font-size: 14px;
+  }
+
+  /* SPACING */
+
+  .stack{
+    gap: 20px;    
+  }
+
+  .cta-links{
+    gap: 16px;
+  }  
+
+  .stack-category ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    // justify-items: center;
+    // justify-content: center;
+  }
+
+  .stack-item{
+    margin-bottom: 0;
+  }  
+
+  /* GLOBAL LATERAL BREATHING SPACE */
+  .description,
+  .tech-stack,
+  .video-pitch,
+  .cta {
+    max-width: 90%;
+    margin-bottom: 28px;
+    margin-top: 24px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  .description{
+    margin-top: 0px;
+  }
+  
+  .video-wrapper{
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .description .description-text {
+    max-width: 44ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
