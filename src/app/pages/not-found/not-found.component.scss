@@ -1,0 +1,158 @@
+// =========================
+// 404 PAGE
+// =========================
+
+.page-not-found {
+
+  /* Typography */
+  --title-size: 48px;
+  --subtitle-size: 20px;
+
+  /* Colors */
+  --accent-color: #4da3ff;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5f5;
+
+  /* Layout */
+  --section-gap: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--section-gap);
+
+  text-align: center;
+  line-height: 1.5;
+}
+
+.page-not-found h1 {
+  margin: 0;
+
+  font-size: var(--title-size);
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.page-not-found h2 {
+  margin: 0;
+
+  font-size: var(--subtitle-size);
+  font-weight: 500;
+  color: var(--text-secondary);
+
+  max-width: 32ch;
+}
+
+
+// =========================
+// CTA
+// =========================
+
+.cta {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 12px;
+}
+
+.cta a {
+  position: relative;
+  overflow: hidden;
+
+  width: 160px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 10px;
+
+  text-decoration: none;
+  color: var(--text-primary);
+
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+
+  background: transparent;
+
+  font-weight: 600;
+
+  z-index: 1;
+
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease-out,
+    border-color 0.3s ease-out;
+}
+
+.cta a::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  width: 0%;
+
+  background-color: var(--accent-color);
+
+  z-index: -1;
+
+  transition: width 0.3s ease;
+}
+
+.cta a:hover::before {
+  width: 100%;
+}
+
+.cta a:hover {
+  color: #0f172a;
+  border-color: #0f172a;
+}
+
+
+// =========================
+// TABLET
+// =========================
+
+@media (max-width: 768px) {
+
+  .page-not-found {
+    --title-size: 34px;
+    --subtitle-size: 18px;
+    --section-gap: 14px;
+  }
+
+  .cta a {
+    width: 140px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+
+// =========================
+// MOBILE
+// =========================
+
+@media (max-width: 480px) {
+
+  .page-not-found {
+    --title-size: 28px;
+    --subtitle-size: 16px;
+    --section-gap: 10px;
+  }
+
+  .page-not-found h2 {
+    max-width: 24ch;
+  }
+
+  .cta a {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
