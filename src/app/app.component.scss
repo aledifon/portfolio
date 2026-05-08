@@ -379,6 +379,23 @@ Sticky footer layout (no position fixed needed)
 }
 
 @media (max-width: 350px){    
+    .top-bar {
+        padding: 0 10px; /* un poco más compacto */
+    }
+
+    .nav-links {
+        gap: 2px; /* reduce conflicto visual con el logo */
+    }
+
+    .nav-links a {
+        font-size: 10px; /* mínimo funcional sin romper legibilidad */
+        letter-spacing: 0.3px;
+    }
+
+    .menu-name {
+        font-size: 14px; /* ligeramente más compacto */
+    }
+
     .footer-left {
         font-size: 11px; /* no más bajo de esto */
         max-width: 70px;
