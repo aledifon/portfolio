@@ -455,7 +455,7 @@ ul{
 
   .project-card-link {
     font-size: 14px;
-    font-weight: 500;    
+    font-weight: 500;      
   }
 
   /* BODY TEXT */
@@ -535,4 +535,15 @@ ul{
     margin-right: auto;
   }
   
+  @media (max-width: 380px){
+
+    .project-card-link{
+      font-size: 12px;      
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }    
+
+  }
 }
