@@ -87,19 +87,19 @@ export class ContactComponent {
     // Set initial state of form flags
     this.isSuccess.set(false);
     this.isSubmitting.set(true);
-    console.log('➡️ submitting START:', this.isSubmitting());
+    // console.log('➡️ submitting START:', this.isSubmitting());
 
     this.contactService.sendContactMessage(payload).subscribe({
       next: (result) => {  
         setTimeout(() => {                          // Applied just for UX purposes
-          console.log('✅ response received');
-          console.log(`Message sent properly`, result);        
+          // console.log('✅ response received');
+          // console.log(`Message sent properly`, result);        
 
           this.isSubmitting.set(false);                // Update the form flags state
           this.isSuccess.set(true);
-          console.log('SUCCESS ON');
+          // console.log('SUCCESS ON');
 
-          console.log('➡️ submitting END (success):', this.isSubmitting());
+          // console.log('➡️ submitting END (success):', this.isSubmitting());
 
           this.resetForm();
 
@@ -111,7 +111,7 @@ export class ContactComponent {
       error: (err) => {
         console.error('❌ error:', err);
         this.isSubmitting.set(false);
-        console.log('➡️ submitting END (error):', this.isSubmitting());
+        // console.log('➡️ submitting END (error):', this.isSubmitting());
       }
     });    
   }

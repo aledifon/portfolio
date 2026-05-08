@@ -19,9 +19,7 @@ export class ProjectsComponent {
   // public projects$!: Observable<Project[]>;
   public projects$!: Observable<ProjectUI[]>;
 
-  constructor(private projectsService: ProjectsService){
-    console.log("Projects component loaded!");
-  }
+  constructor(private projectsService: ProjectsService){}
 
   ngOnInit(){
     this.searchProjects();  

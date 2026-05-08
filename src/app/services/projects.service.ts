@@ -21,7 +21,7 @@ export class ProjectsService {
    * by adding UI-specific state like "isExpanded".
    */
   getProjects(): Observable<ProjectUI[]> {
-    console.log("Executing HTTP request");
+    // console.log("Executing HTTP request");
 
     // return this.http.get<Project[]>(this.projectsPath);    
 
