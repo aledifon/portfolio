@@ -198,22 +198,22 @@ ul{
   height: auto;
   border-radius: 8px;  
 
-  // transform: none;    
+  transform: none;    
 
-  /* === GPU / Chrome stability fixes === */
+  // /* === GPU / Chrome stability fixes === */
 
-  /* Fuerza capa propia de composición sin depender de transforms externos */
-  transform: translateZ(0);
-  will-change: transform;
+  // /* Fuerza capa propia de composición sin depender de transforms externos */
+  // transform: translateZ(0);
+  // will-change: transform;
 
-  /* Evita glitches de backface en GPU compositing */
-  backface-visibility: hidden;
+  // /* Evita glitches de backface en GPU compositing */
+  // backface-visibility: hidden;
 
-  /* Ayuda a estabilizar color pipeline en algunos Chrome/GPU combos */
-  background: #000;
+  // /* Ayuda a estabilizar color pipeline en algunos Chrome/GPU combos */
+  // background: #000;
 
-  /* Evita filtros heredados o estados raros */
-  filter: none;  
+  // /* Evita filtros heredados o estados raros */
+  // filter: none;  
 }
 
 // CTA section
