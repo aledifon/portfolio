@@ -254,9 +254,11 @@ a:hover {
     }
 
     a{
+        min-width: 155px;
         width: 140px;
         height: 40px;
         font-size: 14px;
+        white-space: nowrap;
     }
 
     .hero-description{
