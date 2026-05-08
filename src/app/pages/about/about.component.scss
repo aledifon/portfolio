@@ -187,7 +187,8 @@ ul{
 // Video Zoom FX (Applied to video container to avoid GPU rendering artifacts)
 .video-wrapper:hover{
   // transform: translateY(-2px);
-  transform: scale(1.02);
+  // transform: scale(1.02);
+  transform: none;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
@@ -195,21 +196,24 @@ ul{
   width: 100%;
   // max-width: 700px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 8px;  
 
-  /*
-  Fix for GPU rendering issues on video elements.
+  transform: none;    
 
-  In some browsers (Chrome/Edge), hardware acceleration can cause
-  color artifacts (e.g. blue/green tint) when rendering video,
-  especially during resize or certain layout conditions.
+  /* === GPU / Chrome stability fixes === */
 
-  These properties help prevent unnecessary GPU compositing
-  and stabilize video rendering.
-  */
-  transform: none;
-  filter: none;
-  backface-visibility: hidden;
+  // /* Fuerza capa propia de composición sin depender de transforms externos */
+  // transform: translateZ(0);
+  // will-change: transform;
+
+  // /* Evita glitches de backface en GPU compositing */
+  // backface-visibility: hidden;
+
+  // /* Ayuda a estabilizar color pipeline en algunos Chrome/GPU combos */
+  // background: #000;
+
+  // /* Evita filtros heredados o estados raros */
+  // filter: none;  
 }
 
 // CTA section
